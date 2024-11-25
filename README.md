@@ -4,13 +4,13 @@ Private Notes of Zishan Ahamed Thandar
 # Penetration Testing Workflow
 
 
-## 1. Network Scan
+## Network Scan
 - Identify live hosts
 - Scan for open ports
 - Identify services and versions
 - Tools: Nmap, Masscan
 
-## 2. Recon
+## Recon
 - Passive Reconnaissance
   - WHOIS Lookup
   - Shodan
@@ -20,7 +20,7 @@ Private Notes of Zishan Ahamed Thandar
   - Directory Enumeration: Dirbuster, Gobuster
   - Tools: Nikto, Wappalyzer
 
-## 3. Exploitation
+## Exploitation
 - Identify vulnerabilities
   - CVE Search
   - Vulnerability Scanners: Nessus, OpenVAS
@@ -30,7 +30,7 @@ Private Notes of Zishan Ahamed Thandar
 - Custom Exploits
   - Write or modify exploits for specific vulnerabilities.
 
-## 4. Pivoting and Tunneling
+## Pivoting
 - Use compromised machines to access restricted networks.
 - Techniques:
   - SSH Tunneling
@@ -38,8 +38,17 @@ Private Notes of Zishan Ahamed Thandar
   - VPN or SOCKS proxies
 - Tools: Chisel, Ligolo, SSH, Metasploit
 
-## 5. Privilege Escalation
-### 5.1 Privilege Escalation for Linux
+## Tunneling
+- Use compromised machines to create secure communication channels.
+- Techniques:
+  - Reverse Tunnels
+  - Port Forwarding
+  - Dynamic Tunnels
+- Tools: SSH, Chisel, Ngrok, Socat
+
+
+## Privilege Escalation
+### Privilege Escalation for Linux
 - Common Techniques:
   - `sudo -l`
   - Exploiting misconfigured SUID binaries
@@ -50,7 +59,7 @@ Private Notes of Zishan Ahamed Thandar
   - Linux Exploit Suggester
   - GTFOBins
 
-### 5.2 Privilege Escalation for Windows
+### Privilege Escalation for Windows
 - Common Techniques:
   - Enumerating user privileges: `whoami /priv`
   - Searching for misconfigured services
