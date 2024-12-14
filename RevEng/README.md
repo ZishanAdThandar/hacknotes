@@ -19,6 +19,7 @@
 - `readelf`: This linux specific tools helps to get info.
 - `objdump`: This linux specific tools helps to get info from objects.
 - `hexeditor`: reading hex file and modifying string with it.
+- `ltrace` and `strace`: record library call while running any excutable.
   
 ## Advance Tools
 - [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
