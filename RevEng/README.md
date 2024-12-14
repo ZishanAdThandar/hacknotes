@@ -16,6 +16,10 @@
 ## Advance Tools
 - Ghidra
 - Radare2
+- GDB
+- WinGDB
+- OllyDbg
+- 
 
 ## Videos and Articles
 - [Reverse Engineering Like a Hacker](https://youtu.be/-__qkpSk_rg)
