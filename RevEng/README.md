@@ -17,6 +17,10 @@
 - Ghidra
 - Radare2
 
+## Videos and Articles
+- [Reverse Engineering Like a Hacker](https://youtu.be/-__qkpSk_rg)
+-  
+
 ## Terminologies
 - Machine Code:
 - Assembly:
