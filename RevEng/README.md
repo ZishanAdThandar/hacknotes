@@ -5,8 +5,13 @@
 - [Pwnable.tw](https://pwnable.tw/)
 - [Crackmes.one](https://crackmes.one/)
 - [TryHackMe](https://tryhackme.com/)
+
+## Basic Tools
+- `file`: to know file type and format.
+- `strings`: to print all strings enside executables.
+- 
   
-## Tools
+## Advance Tools
 - Ghidra
 - IDA Pro
 - Radare2
