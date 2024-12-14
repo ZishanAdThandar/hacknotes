@@ -10,7 +10,7 @@
 - [Videos and Articles](#videos-and-articles)
 
 ## Labs
-- [Crackmes.one](https://crackmes.one/)
+- [Crackmes](https://crackmes.one/)
 - [TryHackMe](https://tryhackme.com/)
 
 ## Basic Tools
