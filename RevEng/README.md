@@ -4,6 +4,10 @@
 - [Advance Tools](#advance-tools)
 - [Videos and Articles](#videos-and-articles)
 - [Terminologies](#terminologies)
+- [Notes](#notes)
+  - [File Formats and Protections](#file-formats-and-protections)
+  - 
+- [Videos and Articles](#videos-and-articles)
 
 ## Labs
 - [Crackmes.one](https://crackmes.one/)
@@ -29,7 +33,23 @@
 - Executable:
 - Compiler:
 
-
+## Notes
+### File Formats and Protections
+- #### PE Sections:
+  - .text: Code.
+  - .data: Initialized variables.
+  - .rdata: Read-only data.
+- #### ELF Sections:
+  - .text: Code.
+  - .bss: Uninitialized data.
+  - .plt and .got: Dynamic linking.
+- #### Understanding Protections
+  - ASLR (Address Space Layout Randomization): Randomizes memory locations.
+    - Solution: Use information leaks to bypass.
+  - DEP (Data Execution Prevention): Prevents execution of non-code memory.
+    - Solution: Use return-oriented programming (ROP).
+  - Obfuscation: Hides program logic.
+    - Solution: Deobfuscate by analyzing patterns.
 
 ## Videos and Articles
 - [Reverse Engineering Like a Hacker](https://youtu.be/-__qkpSk_rg)
