@@ -17,8 +17,8 @@
 - `hexeditor`: reading hex file and modifying string with it.
   
 ## Advance Tools
-- Ghidra
-- Radare2
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
+- [Radare2](https://github.com/radareorg/radare2)
 - GDB
 - WinGDB
 - OllyDbg
