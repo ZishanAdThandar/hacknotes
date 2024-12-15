@@ -30,45 +30,7 @@ Private Notes of Zishan Ahamed Thandar
 - Custom Exploits
   - Write or modify exploits for specific vulnerabilities.
 
-## Pivoting
-- Use compromised machines to access restricted networks.
-- Techniques:
-  - SSH Tunneling
-  - Proxychains
-  - VPN or SOCKS proxies
-- Tools: Chisel, Ligolo, SSH, Metasploit
 
-## Tunneling
-- Use compromised machines to create secure communication channels.
-- Techniques:
-  - Reverse Tunnels
-  - Port Forwarding
-  - Dynamic Tunnels
-- Tools: SSH, Chisel, Ngrok, Socat
-
-
-## Privilege Escalation
-### Privilege Escalation for Linux
-- Common Techniques:
-  - `sudo -l`
-  - Exploiting misconfigured SUID binaries
-  - Kernel Exploits
-  - Exploiting writable `PATH` or `.bashrc`
-- Tools:
-  - LinPEAS
-  - Linux Exploit Suggester
-  - GTFOBins
-
-### Privilege Escalation for Windows
-- Common Techniques:
-  - Enumerating user privileges: `whoami /priv`
-  - Searching for misconfigured services
-  - Registry Exploits
-  - DLL Hijacking
-- Tools:
-  - WinPEAS
-  - PowerUp
-  - Windows Exploit Suggester
 
 
 
