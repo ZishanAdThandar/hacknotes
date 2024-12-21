@@ -16,6 +16,7 @@
 ## Basic Tools
 - `file`: to know file type and format.
 - `strings`: to print all strings enside executables.
+- `checksec`: checking file details
 - `readelf`: This linux specific tools helps to get info.
 - `objdump`: This linux specific tools helps to get info from objects.
 - `hexeditor`: reading hex file and modifying string with it.
