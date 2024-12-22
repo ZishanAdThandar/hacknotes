@@ -32,11 +32,11 @@
 - [dogbolt.org](https://dogbolt.org)
 
 ## Docker
-1. Link: https://hub.docker.com/r/kasmweb/remnux-focal-desktop
-  ```bash
-  docker pull kasmweb/remnux-focal-desktop:1.16.0
-  docker run -it --rm -p 6901:6901 -e VNC_PW=password kasmweb/remnux-focal-desktop:1.16.0
-  ```
+- remnux
+  https://hub.docker.com/r/kasmweb/remnux-focal-desktop
+  Install: `docker pull kasmweb/remnux-focal-desktop:1.16.0`
+  Start: `docker run -it --rm -p 6901:6901 -e VNC_PW=password kasmweb/remnux-focal-desktop:1.16.0`
+  
 
 ## Terminologies
 - Machine Code:
