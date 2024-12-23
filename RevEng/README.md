@@ -36,6 +36,8 @@
   - Image: https://hub.docker.com/r/kasmweb/remnux-focal-desktop
   - Install: `docker pull kasmweb/remnux-focal-desktop:1.16.0`
   - Start: `docker run -it --rm -p 6901:6901 -e VNC_PW=password kasmweb/remnux-focal-desktop:1.16.0`
+  - Open https://localhost:6901/ and allow https
+  - Then wait some second and click on connect.
   
 
 ## Terminologies
