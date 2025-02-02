@@ -1,5 +1,4 @@
 # Reverse Engineering Notes
-- [Labs](#labs)
 - [Basic Tools](#basic-tools)
 - [Advance Tools](#advance-tools)
 - [Docker](#docker)
