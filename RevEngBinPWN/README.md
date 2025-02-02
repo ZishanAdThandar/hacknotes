@@ -7,12 +7,10 @@
 - [Terminologies](#terminologies)
 - [Notes](#notes)
   - [File Formats and Protections](#file-formats-and-protections)
-  - 
+  -  
+- [Labs](#labs)
 - [Videos and Articles](#videos-and-articles)
 
-## Labs
-- [Crackmes](https://crackmes.one/)
-- [TryHackMe](https://tryhackme.com/)
 
 ## Basic Tools
 - `file`: to know file type and format.
@@ -78,6 +76,12 @@
     Return to PLT
     Playing with ROP
 
+## Labs
+- TryHackMe
+  - [Intro To Pwntools](https://tryhackme.com/r/room/introtopwntools)
+  - [PWN101](https://tryhackme.com/r/room/pwn101)
+- [Crackmes](https://crackmes.one/)
+  
 ## Videos and Articles
 - [Reverse Engineering Like a Hacker](https://youtu.be/-__qkpSk_rg)
 - [Live Overflow's Binary Exploit Playlist on YouTube](https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
