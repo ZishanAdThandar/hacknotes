@@ -65,7 +65,23 @@
   - Obfuscation: Hides program logic.
     - Solution: Deobfuscate by analyzing patterns.
 
+
+###
+    Buffer overflow
+    Modify variable's value
+    Return to win
+    Return to shellcode
+    Integer Overflow
+    Format string exploit
+    Bypassing mitigations
+    GOT overwrite
+    Return to PLT
+    Playing with ROP
+
 ## Videos and Articles
 - [Reverse Engineering Like a Hacker](https://youtu.be/-__qkpSk_rg)
+- [Live Overflow's Binary Exploit Playlist on YouTube](https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
+- [Exploit Education website](https://exploit.education/)
+- [Nightmare course on GitHub](https://github.com/guyinatuxedo/nightmare/tree/master/modules)
 
   
