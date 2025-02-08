@@ -23,6 +23,7 @@
 ## Advance Tools
 - [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
 - [Radare2](https://github.com/radareorg/radare2)
+- [Cutter](https://github.com/rizinorg/cutter)
 - GDB
 - WinGDB
 - OllyDbg
