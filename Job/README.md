@@ -12,6 +12,11 @@
     - [Red Team](#red-team) 
     - [Blue Team](#blue-team)
 
+1 Screening
+2 CTF
+3,4,5 Techinical Thoery+Practical
+6 HR
+
 ## Job Hunting
 - LinkedIn
   - Search using LinkedIn Job Search with filters
