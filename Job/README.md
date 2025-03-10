@@ -28,7 +28,8 @@
   - Chat servers like discord, facebook groups, telegram groups etc.
 
 ## CV
-Sample:
+Sample: https://zishanadthandar.github.io/CV.pdf
+Latex: [CV Latex](./CVLatext.tex)
 
 # Interview
 ## Interview Prerequisites
