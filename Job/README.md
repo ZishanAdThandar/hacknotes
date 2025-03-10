@@ -26,7 +26,7 @@
 # Interview
 ## Interview Prerequisites
 - ### **Interview Preparation Guide**
-  - Ensure a quiet, distraction-free environment without background noise.
+  - Ensure a quiet, distraction-free environment without background noise. 
   - Use a high-quality microphone, earphones, and camera for optimal communication.
   - Inform family members or roommates in advance to avoid interruptions. 
     - In case of an interruption, stay calm:
@@ -108,17 +108,28 @@
 
 
 ## Interview Question Answers
-- Screening Round
-- CTF Round
-  - Blue Team
-  - Red Team
+- General Interview
+- Technical Assessment
+  - Online Test  
+    - Multiple-Choice Questions
+    - Tools: Burp Suite, Wireshark, Metasploit, Nmap, IDS/IPS concepts, Splunk, Wazuh
+    - Knowledge of ISO 27001, GDPR, NIST, and OWASP Top 10 may be tested.
+    - Candidates are given a vulnerable machine or website to exploit.
+  - CTF Challenge
+    - Web Exploitation (SQLi, XSS, SSRF)
+    - Reverse Engineering (basic CrackMe)
+    - Privilege Escalation (Linux/Windows)
+    - Network Pentesting
+    - Platforms: Hack The Box, TryHackMe, CyberTalents, PicoCTF
 - Techinical Round Thoery
-  - Blue Team
-  - Red Team
-- Techinical Round Practical
-  - Blue Team
-  - Red Team
+  - Core Cybersecurity Concepts
+  - Practical & Scenario-Based Questions
 - HR Round
-
+  - General questions on teamwork, problem-solving, and company fit
+  - Possible salary negotiation discussions
+- Final Managerial / Offer Discussion (Optional)
+  - For Senior Roles (Security Engineer, Architect, Manager, etc.)
+  - Handling incident response scenarios
+  - Experience in compliance, risk management, security architecture
 
 
