@@ -21,24 +21,15 @@
 - `ltrace` and `strace`: record library call while running any excutable.
   
 ## Advance Tools
-- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
-- [Radare2](https://github.com/radareorg/radare2)
-- [Cutter](https://github.com/rizinorg/cutter)
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra) / [Radare2](https://github.com/radareorg/radare2) / [Cutter](https://github.com/rizinorg/cutter) / IDA PRO
 - GDB
 - WinGDB
 - OllyDbg
 - [dogbolt.org](https://dogbolt.org)
 
 ## Docker
-- kasmweb/remnux
-  - Image: https://hub.docker.com/r/kasmweb/remnux-focal-desktop
-  - Install: `docker pull kasmweb/remnux-focal-desktop:1.16.0`
-  - Start: `docker run -it --rm -p 6901:6901 -e VNC_PW=password kasmweb/remnux-focal-desktop:1.16.0`
-  - Open https://localhost:6901/ and allow https
-  - User : kasm_user Password: password
-  - Then wait some second and click on connect.
+- liveoverflow/pwn_docker
   
-
 ## Terminologies
 - Machine Code:
 - Assembly:
