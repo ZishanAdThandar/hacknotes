@@ -120,7 +120,7 @@
     - Reverse Engineering (basic CrackMe)
     - Privilege Escalation (Linux/Windows)
     - Network Pentesting
-    - Platforms: Hack The Box, TryHackMe, CyberTalents, PicoCTF
+    - Platforms: Hack The Box, TryHackMe, CyberTalents, PicoCTF, portswiggerlabs
 - Techinical Round Thoery
   - Core Cybersecurity Concepts
   - Practical & Scenario-Based Questions
