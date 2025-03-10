@@ -1,16 +1,13 @@
 - [Job Hunting](#job-hunting)
 - [CV](#cv)
-- [Interview](#interview)
-  - [Interview Prerequisites](#interview-prerequisites)
-    - [Interview Preparation Guide](#interview-preparation-guide)
-    - [Communication Tips](#communication-tips)
-    - [Practical Interview Preparation](#practical-interview-preparation)
-    - [Additional Tips](#additional-tips)
-  - [Interview Question Answers]()
-    - [Common Questions]
-    - [Basic Questions](#basic-questions)
-    - [Red Team](#red-team) 
-    - [Blue Team](#blue-team)
+- [Interview Prerequisites](#interview-prerequisites)
+  - [Interview Preparation Guide](#interview-preparation-guide)
+  - [Communication Tips](#communication-tips)
+  - [Practical Interview Preparation](#practical-interview-preparation)
+  - [Additional Tips](#additional-tips)
+- [Topics to learn](#topics-to-learn)
+- [Practical Prep for Cybersecurity Interviews](#practical-prep-for-cybersecurity-interviews)
+- [Interview Question Answers](#interview-question-answers)
 
 ## Job Hunting
 - LinkedIn
@@ -23,8 +20,8 @@
   - Chat servers like discord, facebook groups, telegram groups etc.
 
 ## CV
-[Sample CV](https://zishanadthandar.github.io/CV.pdf) 
-[Latex code for CV](./CVLatext.tex)
+- [Sample CV](https://zishanadthandar.github.io/CV.pdf)    
+- [Latex code for CV](./CVLatext.tex)
 
 # Interview
 ## Interview Prerequisites
@@ -55,20 +52,73 @@
   - **Be punctual:** Join the interview a few minutes early to show professionalism.
   - **Follow up:** Send a polite thank-you email after the interview to leave a positive impression.
 
+## Topics to learn
+### 1. Fundamentals of Cybersecurity
+- CIA Triad (Confidentiality, Integrity, Availability)
+- Security Controls (Preventive, Detective, Corrective)
+- Authentication, Authorization, and Accounting (AAA)
+- Risk Assessment & Management
+### 2. Networking & Protocols
+- OSI & TCP/IP Model
+- Common Protocols (HTTP(S), FTP, SSH, DNS, SMTP, etc.)
+- Firewalls, VPNs, IDS/IPS, and Proxies
+- Subnetting, VLANs, NAT, and Packet Analysis (Wireshark)
+### 3. Web Application Security
+- OWASP Top 10 Vulnerabilities (SQL Injection, XSS, CSRF, SSRF, etc.)
+- Web Pentesting Methodologies
+- HTTP Headers and Cookies Security
+- API Security (JWT, OAuth, Rate Limiting, API Pentesting)
+### 4. System Security
+- Windows & Linux Security (File Permissions, Logging, Hardening)
+- Active Directory Security (LDAP, Kerberos, NTLM)
+- Privilege Escalation (Windows & Linux)
+- Malware Analysis & Reverse Engineering Basics
+### 5. Penetration Testing & Exploitation
+- Reconnaissance (OSINT, Nmap, Shodan, Google Dorking)
+- Vulnerability Scanning (Nessus, OpenVAS)
+- Exploitation Techniques (Buffer Overflow, RCE, LFI/RFI, Shellcode)
+- Post-Exploitation & Lateral Movement
+### 6. Cryptography & Secure Communication
+- Hashing vs. Encryption (MD5, SHA, AES, RSA, ECC)
+- Digital Certificates, PKI, and SSL/TLS
+- Secure Coding Practices
+### 7. Cloud & DevSecOps Security
+- AWS, Azure, and GCP Security (IAM, S3, Security Groups)
+- Container Security (Docker, Kubernetes)
+- CI/CD Pipeline Security
+### 8. Threat Intelligence & Incident Response
+- Cyber Kill Chain & MITRE ATT&CK Framework
+- SIEM & Log Analysis (Splunk, ELK)
+- Digital Forensics (Memory, Disk, Network Forensics)
+- Incident Handling & Response Plans
+### 9. Certifications & Hands-on Labs
+- OSCP, CRTP, CEH, CISSP (Certification-Oriented Questions)
+- Hack The Box, TryHackMe, CTFs (Hands-on Practice)
 
-## Basic Question
-Q1. Introduce yourself:
-Ans:
-
-1 Screening
-2 CTF
-3,4,5 Techinical Thoery+Practical
-6 HR
-
-
-## Blue Team
+## Practical Prep for Cybersecurity Interviews
+- Red Team
+  - Tools: Nmap, Shodan, theHarvester, Amass, Burp Suite, OWASP ZAP, SQLmap, Wfuzz, Gobuster, Metasploit, Impacket, CrackMapExec, Mimikatz, LinPEAS, WinPEAS, AWS CLI, Postman, JWT Toolkit
+  - Bug Categories: SQLi, XSS, CSRF, SSRF, RCE, JWT Tampering, AD Attacks, Pass-the-Hash, Kerberoasting, Lateral Movement, S3 Misconfigs, IAM Issues
+  - Practice Platforms: TryHackMe, Hack The Box, VulnHub, PortSwigger Academy
+- Blue Team
+  - Tools:Wireshark, Suricata, Zeek, Splunk, ELK, Velociraptor, Sysmon
+  - Bug Categories: Phishing, Log Tampering, Malware Analysis, Threat Hunting, AD Attacks, Lateral Movement
+  - Practice Platforms: Blue Team Labs Online, Splunk Boss of the SOC, LetsDefend
 
 
-## Red Team
+
+## Interview Question Answers
+- Screening Round
+- CTF Round
+  - Blue Team
+  - Red Team
+- Techinical Round Thoery
+  - Blue Team
+  - Red Team
+- Techinical Round Practical
+  - Blue Team
+  - Red Team
+- HR Round
+
 
 
