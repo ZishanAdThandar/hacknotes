@@ -78,14 +78,11 @@
 
 ## Labs
 - TryHackMe
-  - [Intro To Pwntools](https://tryhackme.com/r/room/introtopwntools)
-  - [PWN101](https://tryhackme.com/r/room/pwn101)
 - [Crackmes](https://crackmes.one/)
   
 ## Videos and Articles
 - [Reverse Engineering Like a Hacker](https://youtu.be/-__qkpSk_rg)
-- [Live Overflow's Binary Exploit Playlist on YouTube](https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
 - [Exploit Education website](https://exploit.education/)
-- [Nightmare course on GitHub](https://github.com/guyinatuxedo/nightmare/tree/master/modules)
+- [Nightmare course on GitHub](https://guyinatuxedo.github.io/)
 
   
