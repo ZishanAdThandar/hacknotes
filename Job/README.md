@@ -12,11 +12,6 @@
     - [Red Team](#red-team) 
     - [Blue Team](#blue-team)
 
-1 Screening
-2 CTF
-3,4,5 Techinical Thoery+Practical
-6 HR
-
 ## Job Hunting
 - LinkedIn
   - Search using LinkedIn Job Search with filters
@@ -64,6 +59,11 @@
 ## Basic Question
 Q1. Introduce yourself:
 Ans:
+
+1 Screening
+2 CTF
+3,4,5 Techinical Thoery+Practical
+6 HR
 
 
 ## Blue Team
