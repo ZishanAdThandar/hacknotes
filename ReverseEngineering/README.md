@@ -38,7 +38,7 @@
 - [Binary Ninja](https://binary.ninja/)
 
 ## Docker
-- liveoverflow/pwn_docker
+- `theflash2k/pwn-dev`
 
 ## Terminologies
 - Machine Code: Low-level binary instructions executed by the CPU.
