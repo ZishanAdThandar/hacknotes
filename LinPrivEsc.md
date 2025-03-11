@@ -52,5 +52,10 @@
      find / -name "*.old" 2>/dev/null
      grep -i "password" /path/to/directory
      ```
+  - **ssh files**
+    ```bash
+    find / -name "id_rsa" -o -name "id_dsa" -o -name "authorized_keys" -o -name "known_hosts" 2>/dev/null
+    find / -name "*.pem" -o -name "*.key" 2>/dev/null
+    ```
 
      
