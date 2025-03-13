@@ -56,7 +56,17 @@
 ## Manual SQLi Method
 ### Checking SQLi Vulnerablity 
 #### Error Based and Union Based
-`'`, `"` or encodings of them will give SQL error.
+```SQL
+'  
+"  
+' --  
+" --  
+' #  
+" #  
+' /*  
+" /*  
+```
+or encodings of them will give SQL error.
 #### Boolean Based
 #### Time Based
 
