@@ -109,7 +109,8 @@ or encodings of them will give SQL error.
 - [VulnWeb by acunetix](http://vulnweb.com/)
 
 ## Resources and Notes
-- [Advnaced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet) Proper Notes with payloads by each SQL Database and SQLi type
+- [Advanced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet) Proper Notes with payloads by each SQL Database and SQLi type
+- [PentestMonkey SQL Injection Cheatsheet](https://pentestmonkey.net/category/cheat-sheet/sql-injection)
 - [PortSwiggerLab](https://portswigger.net/web-security/sql-injection#what-is-sql-injection-sqli)
 
 
