@@ -1,8 +1,10 @@
 # SQL Injection
 
-- [Common Weakness Enumeration by Mitre Corporation](#Common-Weakness-Enumeration-by-Mitre-Corporation)
+- [Common Weakness Enumeration by Mitre Corporation](#common-weakness-enumeration-by-mitre-corporation)  
 - [Types of SQL Injection](#types-of-sql-injection)
-- 
+- [SQL Injection Automation Tools](#sql-injection-automation-tools)
+- [Practice Labs](#practice-labs)
+- [Resources and Notes](#resources-and-notes)
 
 ## Common Weakness Enumeration by Mitre Corporation
 - CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
@@ -50,6 +52,19 @@
 
 ## Identifying SQL 
 ## Identifying SQL version
+
+
+## SQL Injection Automation Tools
+1. SQLMAP
+2. JQL Injection
+3. Havij (Outdated)
+   
+## Practice Labs
+- [PortSwiggerLab Labs](https://portswigger.net/web-security/all-labs#sql-injection)
+
+## Resources and Notes
+- [PortSwiggerLab](https://portswigger.net/web-security/sql-injection#what-is-sql-injection-sqli)
+- 
 
 
 
