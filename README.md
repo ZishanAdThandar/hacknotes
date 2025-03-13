@@ -7,6 +7,7 @@ Private Notes of Zishan Ahamed Thandar
 - [Web](./Web)
 - [Reverse Engineering](./ReverseEngineering)
 - [Binary Exploitation](./BinaryExploitation)
+- [Job Notes](./Job)
 
 # Penetration Testing Workflow
 
