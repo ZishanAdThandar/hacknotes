@@ -1,4 +1,4 @@
-# hacknotes
+# HackNotes
 
 Private Notes of Zishan Ahamed Thandar
 
