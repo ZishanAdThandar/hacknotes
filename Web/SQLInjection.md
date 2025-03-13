@@ -6,6 +6,7 @@
 - [Manual SQLi Method](#manual-sqli-method)
   - [Checking SQLi Vulnerablity](#checking-sqli-vulnerablity)
   - 
+- [Top WAF Bypass methods](#top-waf-bypass-methods)
 - [SQL Injection Automation Tools](#sql-injection-automation-tools)
 - [Practice Labs](#practice-labs)
 - [Resources and Notes](#resources-and-notes)
