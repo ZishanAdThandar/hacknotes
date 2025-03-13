@@ -82,6 +82,7 @@ or encodings of them will give SQL error.
 - [PortSwiggerLab Labs](https://portswigger.net/web-security/all-labs#sql-injection)
 
 ## Resources and Notes
+- [Advnaced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
 - [PortSwiggerLab](https://portswigger.net/web-security/sql-injection#what-is-sql-injection-sqli)
 - 
 
