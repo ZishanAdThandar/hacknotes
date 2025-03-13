@@ -20,7 +20,7 @@ This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetr
 - Paramter ``` ```
 
 ## Login Bypass
-- Default Credential
+- Default Credential: Search on search engines for platform or CMS specific credentials
 - Credential Stuffing
  - Using same username password from another place
  - Look for username password in the app
