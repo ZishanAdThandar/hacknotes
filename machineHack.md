@@ -25,9 +25,7 @@
    1. Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
    2. Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
    3. Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
-- Parameter Fuzzing
-   1. Paramter ``` ```
-- BruteForce
+- BruteForce: ssh, kerbrute or any other service using hydra or any specific tool
 - Check outdated or vulnerable version for any service or software using exploitdb and google
 - Default Crecdentials, Check any software or service is using default credential or easy to crack username password
 
