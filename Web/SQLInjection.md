@@ -6,7 +6,7 @@
 - [Manual SQLi Method](#manual-sqli-method)
   - [Checking SQLi Vulnerablity](#checking-sqli-vulnerablity)
   - 
-- [Top WAF Bypass methods](#top-waf-bypass-methods)
+- [Top WAF Bypass Methods](#top-waf-bypass-methods)
 - [SQL Injection Automation Tools](#sql-injection-automation-tools)
 - [Practice Labs](#practice-labs)
 - [Resources and Notes](#resources-and-notes)
@@ -85,9 +85,19 @@ There are ten major types of SQL databases,
 or encodings of them will give SQL error.
 #### Boolean Based
 #### Time Based
+#### Identifying SQL version
 
-### Identifying SQL version
 
+## Top WAF Bypass Methods
+- Encoding (Hex, Base64, URL encoding, Unicode)
+- Case Changing (UnIoN SeLeCt instead of UNION SELECT)
+- Comments (--, #, /**/ to obfuscate queries)
+- Concatenation (CONCAT(), ||, +, UNION ALL SELECT ''||'payload')
+- HTTP Header Injection (X-Forwarded-For, User-Agent, Referer)
+- Escaping & Special Characters (\, \x00, %00, NULL bytes)
+- Whitespace Manipulation (/**/, TAB, NEWLINE tricks)
+- Time Delays (SLEEP(), pg_sleep(), WAITFOR DELAY)
+- Case-Sensitive Function Call Variations (SeLeCt(), uNiOn())
 
 ## SQL Injection Automation Tools
 1. SQLMAP
