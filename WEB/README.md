@@ -35,14 +35,14 @@ This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetr
    - Known Wordlist: rockyou, SecLists
 - Social Engineering: Cross Site Scripting Cookie Theft, Phishing, Pretexting etc
 - Cookie Poisoning: `admin=True`, `roll=admin` etc.
-- HTTP Parameter Pollution
-- File Inclusion to access admin panel Directly
+- HTTP Parameter Pollution: e.g. `username=admin&username=attacker&password=123456`
+- File Inclusion to access admin panel Directly: e.g. `http://target.com/file=http://127.0.0.1:3000/admin/dashboard.php` 
 - Exploiting Forgot Password Flow
 - Debug Mode can lead to disclose sensitive info from errors
 - Hardcoded Username Password in source code
 - Session Fixation
 - Token Hijacking
-- Insecure Direct Object References (IDOR)
+- Insecure Direct Object References (IDOR): e.g. `GET /user/profile?userid=124`
 
 ## Known CVE 
 - Check outdated or vulnerable version for any service or software using exploitdb and google
