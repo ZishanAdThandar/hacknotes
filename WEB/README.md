@@ -1,15 +1,23 @@
-- Subdomain Enumeration
+This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetration Testing.
+
+- [Subdomain Enumeration](#subdomain-enumeration)
+- [Directory Busting](#directory-busting)
+- [Parameter Fuzzing](#parameter-fuzzing)
+- [Login Bypass](#login-bypass)
+- [Known CVE](#known-cve)
+## Subdomain Enumeration
    1. Gobuster ```gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -r```
    2. ffuf ```ffuf -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'```
-- Directory Busting
+
+## Directory Busting
    1. Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
    2. Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
    3. Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
-- Parameter Fuzzing
-   1. Paramter ``` ```
-- BruteForce
 
-- Login Bypass
+## Parameter Fuzzing
+   1. Paramter ``` ```
+
+## Login Bypass
   - Default Credential
   - Credential Stuffing
     - Using same username password from another place
@@ -33,8 +41,9 @@
   - Session Fixation
   - Token Hijacking
   - Insecure Direct Object References (IDOR)
+
+## Known CVE 
 - Check outdated or vulnerable version for any service or software using exploitdb and google
-- Default Crecdentials, Check any software or service is using default credential or easy to crack username password
 
 
 
