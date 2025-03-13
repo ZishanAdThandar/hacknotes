@@ -2,6 +2,7 @@
 
 - [Common Weakness Enumeration by Mitre Corporation](#common-weakness-enumeration-by-mitre-corporation)  
 - [Types of SQL Injection](#types-of-sql-injection)
+- [Types of Databases](#types-of-databases)
 - [Manual SQLi Method](#manual-sqli-method)
   - [Checking SQLi Vulnerablity](#checking-sqli-vulnerablity)
   - 
@@ -53,6 +54,20 @@
   - Hybrid SQLi (Combining Multiple SQLi Techniques for Stronger Attacks)  
   - Automated SQLi (Using Tools like SQLmap for Automated Exploitation)  
 
+## Types of Databases
+Payloads and exploitation method will vary by database type.
+There are ten major types of SQL databases,
+- MySQL
+- MSSQL (Microsoft SQL Server)
+- Oracle Database
+- PostgreSQL
+- MariaDB
+- SQLite
+- IBM Db2
+- Sybase (SAP ASE)
+- Firebird
+- CockroachDB
+
 ## Manual SQLi Method
 ### Checking SQLi Vulnerablity 
 #### Error Based and Union Based
@@ -80,11 +95,11 @@ or encodings of them will give SQL error.
    
 ## Practice Labs
 - [PortSwiggerLab Labs](https://portswigger.net/web-security/all-labs#sql-injection)
+- [VulnWeb by acunetix](http://vulnweb.com/)
 
 ## Resources and Notes
-- [Advnaced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
+- [Advnaced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet) Proper Notes with payloads by each SQL Database and SQLi type
 - [PortSwiggerLab](https://portswigger.net/web-security/sql-injection#what-is-sql-injection-sqli)
-- 
 
 
 
