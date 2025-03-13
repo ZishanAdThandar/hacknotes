@@ -2,6 +2,9 @@
 
 - [Common Weakness Enumeration by Mitre Corporation](#common-weakness-enumeration-by-mitre-corporation)  
 - [Types of SQL Injection](#types-of-sql-injection)
+- [Manual SQLi Method](#manual-sqli-method)
+  - [Checking SQLi Vulnerablity](#checking-sqli-vulnerablity)
+  - 
 - [SQL Injection Automation Tools](#sql-injection-automation-tools)
 - [Practice Labs](#practice-labs)
 - [Resources and Notes](#resources-and-notes)
@@ -50,8 +53,14 @@
   - Hybrid SQLi (Combining Multiple SQLi Techniques for Stronger Attacks)  
   - Automated SQLi (Using Tools like SQLmap for Automated Exploitation)  
 
-## Identifying SQL 
-## Identifying SQL version
+## Manual SQLi Method
+### Checking SQLi Vulnerablity 
+#### Error Based and Union Based
+`'`, `"` or encodings of them will give SQL error.
+#### Boolean Based
+#### Time Based
+
+### Identifying SQL version
 
 
 ## SQL Injection Automation Tools
