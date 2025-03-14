@@ -13,7 +13,7 @@
 - LinkedIn
   - Search using LinkedIn Job Search with filters
   - Search using Post Search with filters
-- Company Career Pages: Google dork for random companies or find in top companies
+- Company Career Pages: Google dork for random companies or find in top companies. e.g ninjajobs.org etc
 - Country Based Job Sites: Find jobs on job search sites of particular region
 - Referal or Networks
   - Ask for referal via people in social media platforms like LinkedIn, facebook etc.
