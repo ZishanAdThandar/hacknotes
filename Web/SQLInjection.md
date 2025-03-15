@@ -70,7 +70,7 @@ There are ten major types of SQL databases,
 - CockroachDB
 
 ## Manual SQLi Method
-### Checking SQLi Vulnerablity 
+### 1. Checking SQLi Vulnerablity 
 #### Error Based and Union Based
 ```SQL
 '  
@@ -85,7 +85,9 @@ There are ten major types of SQL databases,
 or encodings of them will give SQL error.
 #### Boolean Based
 #### Time Based
-#### Identifying SQL version
+### 2. Identifying SQL Database and Version
+### 3. Retriving SQL DB Names
+### 4. Retriving SQL Table Names
 
 
 ## Top WAF Bypass Methods
