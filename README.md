@@ -9,7 +9,7 @@ Private Notes of Zishan Ahamed Thandar
   - [Linux Priviledge Escalation](./Machines/LinPrivEsc.md)
   - [Windows Priviledge Escalation](./Machines/WinPrivEsc.md)
 - [Web](./Web)
-  - [SQL Injection Cheatsheet](./Web/SQLInjection.md)
+  - [SQL Injection](./Web/SQLInjection.md)
 - [Reverse Engineering](./ReverseEngineering)
 - [Binary Exploitation](./BinaryExploitation)
 - [Job Notes](./Job)
