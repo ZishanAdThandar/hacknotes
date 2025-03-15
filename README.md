@@ -4,6 +4,10 @@ Private Notes of Zishan Ahamed Thandar
 
 ## Contents
 - [Machines](./Machines)
+  - [Pivoting](./Machines/Pivoting.md)
+  - [Tunneling](./Machines/Tunneling.md)
+  - [Linux Priviledge Escalation](./Machines/LinPrivEsc.md)
+  - [Windows Priviledge Escalation](./Machines/WinPrivEsc.md)
 - [Web](./Web)
   - [SQL Injection Cheatsheet](./Web/SQLInjection.md)
 - [Reverse Engineering](./ReverseEngineering)
