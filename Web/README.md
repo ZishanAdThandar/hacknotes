@@ -8,9 +8,9 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Basic Automation](#basic-recon-automation)
 - [Subdomain Enumeration](#subdomain-enumeration)
 - [Directory Busting](#directory-busting)
+- [CMS Test](#cms-test)
 - [Parameter Fuzzing](#parameter-fuzzing)
 - [Login Bypass](#login-bypass)
-- [Known CVE](#known-cve)
 
 ## Basic Recon
 - dig
@@ -36,9 +36,10 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
 - Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
 
-## CMS Scanner
+## CMS Test
 - wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --plugin-detection aggresive --api-token=<API_TOKEN>`
-- Search for other CMS Scanner and use them on particular CMS 
+- Search for other CMS Scanner and use them on particular CMS
+- Known CVE: Check outdated or vulnerable version for any service or software using exploitdb and google.
 
 ## Parameter Fuzzing
 - Paramter ``` ```
@@ -68,8 +69,6 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - Token Hijacking
 - Insecure Direct Object References (IDOR): e.g. `GET /user/profile?userid=124`
 
-## Known CVE 
-- Check outdated or vulnerable version for any service or software using exploitdb and google
 
 
 
