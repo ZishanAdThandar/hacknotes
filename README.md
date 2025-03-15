@@ -1,6 +1,6 @@
 # HackNotes
 
-Private Notes of Zishan Ahamed Thandar
+Private Notes for CTF Players of Zishan Ahamed Thandar
 
 ## Contents
 - [Machines](./Machines)
@@ -13,6 +13,9 @@ Private Notes of Zishan Ahamed Thandar
 - [Reverse Engineering](./ReverseEngineering)
 - [Binary Exploitation](./BinaryExploitation)
 - [Job Notes](./Job)
+
+
+You can also read for [Active Directory Notes](https://github.com/ZishanAdThandar/pentest/blob/main/notes/ActiveDirectory.md) and [Bug Bounty Methodology](https://github.com/ZishanAdThandar/pentest/blob/main/notes/BugBountyHuntingMethodology.md) from [My Pentester Guide Repo https://github.com/ZishanAdThandar/pentest](https://github.com/ZishanAdThandar/pentest).
 
 # Penetration Testing Workflow
 
