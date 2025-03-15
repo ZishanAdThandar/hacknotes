@@ -13,7 +13,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Login Bypass](#login-bypass)
 
 ## Basic Recon
-- dig
+- dig `dig axfr @<ip_address> target.tld`
 - nslookup
 - whois
   
