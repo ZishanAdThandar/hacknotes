@@ -1,7 +1,9 @@
 This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetration Testing.
+Check my [Bug Bounty Hunting Methodology](https://github.com/ZishanAdThandar/pentest/blob/main/notes/BugBountyHuntingMethodology.md) to learn some bonus.
+You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to install tools and wordlist on your linux system.
 
 - [Basic Recon](#basic-recon)
-- [Basic Recon Automation](#basic-recon-automation)
+- [Basic Automation](#basic-recon-automation)
 - [Subdomain Enumeration](#subdomain-enumeration)
 - [Directory Busting](#directory-busting)
 - [Parameter Fuzzing](#parameter-fuzzing)
@@ -12,15 +14,20 @@ This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetr
 - dig
 - nslookup
 - whois
-
-## Basic Recon Automation
-- nikto
-- theharvester
   
 ## Subdomain Enumeration
 - Gobuster ```gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -r```
 - ffuf ```ffuf -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'```
+- subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install] `subauto domain.tld` [Mainly for real world subdomain enumeration.]
 
+## Basic Automation
+- nikto
+- theharvester
+- wapiti
+- afrog
+- nuclei
+- acunetix
+  
 ## Directory Busting
 - DIRB `dirb https://target.com/`
 - Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
