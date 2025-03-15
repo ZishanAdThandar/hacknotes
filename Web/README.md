@@ -1,5 +1,7 @@
 This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetration Testing.
 
+- [Basic Recon](#basic-recon)
+- [Basic Recon Automation](#basic-recon-automation)
 - [Subdomain Enumeration](#subdomain-enumeration)
 - [Directory Busting](#directory-busting)
 - [Parameter Fuzzing](#parameter-fuzzing)
@@ -10,6 +12,10 @@ This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetr
 - dig
 - nslookup
 - whois
+
+## Basic Recon Automation
+- nikto
+- theharvester
   
 ## Subdomain Enumeration
 - Gobuster ```gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -r```
