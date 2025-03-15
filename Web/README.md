@@ -16,6 +16,10 @@ This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetr
 - Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
 - Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
 
+## CMS Scanner
+- wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --plugin-detection aggresive --api-token=<API_TOKEN>`
+- Search for other CMS Scanner and use them on particular CMS 
+
 ## Parameter Fuzzing
 - Paramter ``` ```
 
