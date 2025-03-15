@@ -1,5 +1,7 @@
 This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetration Testing.
+
 Check my [Bug Bounty Hunting Methodology](https://github.com/ZishanAdThandar/pentest/blob/main/notes/BugBountyHuntingMethodology.md) to learn some bonus.
+
 You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to install tools and wordlist on your linux system.
 
 - [Basic Recon](#basic-recon)
