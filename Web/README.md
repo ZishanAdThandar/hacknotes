@@ -44,11 +44,17 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 ## Parameter Fuzzing
 - Paramter ``` ```
 
+## Common file checks
+- `robots.txt`, `secrets.txt` etc file could reveal sensetive information
+- use `dirb` to find common files. `dirb http://target.tld`
+- Check source code for any sensetive information leak
+
 ## Login Bypass
 - Default Credential: Search on search engines for platform or CMS specific credentials
 - Credential Stuffing
  - Using same username password from another place
  - Look for username password in the app
+ - Look username password in source code, encoded, or hidden stegnography etc.
 - SQL Injection
 - NoSQL Injection
 - Forced Browsing (Unprotected Admin Panels): Directory busting will show unprotected panels
