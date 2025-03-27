@@ -6,6 +6,7 @@
 
 - sudo -l (Check Sudo Privileges)
    - **List Privileges**: `sudo -l`
+   - Running a vuln executable as particular user, `sudo -u targetuser /bin/vulnfile`
    - **Exploits**: Look for `NOPASSWD` or exploitable commands (e.g., `vim`, `find`).
 
 - Cron Jobs
