@@ -11,6 +11,8 @@
    - https://github.com/21y4d/nmapAutomator
    - https://github.com/Tib3rius/AutoRecon/
 - Port Scan
+   - naabu
+      - tcp all `naabu -p 1-65535 -host <target>`
    - rustscan
       - tcp `rustscan -a <target>`
       - udp `rustscan --udp -a <target>`
