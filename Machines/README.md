@@ -12,7 +12,7 @@
    - https://github.com/Tib3rius/AutoRecon/
 - Port Scan
    - naabu
-      - tcp all `naabu -p 1-65535 -host <target>`
+      - tcp all `naabu -p - -host <target>`
    - rustscan
       - tcp `rustscan -a <target>`
       - udp `rustscan --udp -a <target>`
