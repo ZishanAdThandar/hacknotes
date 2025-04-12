@@ -42,7 +42,9 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - Known CVE: Check outdated or vulnerable version for any service or software using exploitdb and google.
 
 ## Parameter Fuzzing
-- Paramter ``` ```
+- `arjun -u target.tlf=d`
+- Burpsuite plugin `parmafinder++`
+- ffuf
 
 ## Common file checks
 - `robots.txt`, `secrets.txt` etc file could reveal sensetive information
