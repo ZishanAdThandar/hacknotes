@@ -8,6 +8,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Basic Automation](#basic-recon-automation)
 - [Subdomain Enumeration](#subdomain-enumeration)
 - [Directory Busting](#directory-busting)
+- [Crawling](#crawling)
 - [CMS Test](#cms-test)
 - [Parameter Fuzzing](#parameter-fuzzing)
 - [Login Bypass](#login-bypass)
@@ -36,6 +37,9 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
 - Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
 
+## Crawling
+
+
 ## CMS Test
 - wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --plugin-detection aggresive --api-token=<API_TOKEN>`
 - Search for other CMS Scanner and use them on particular CMS
@@ -44,6 +48,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 ## Parameter Fuzzing
 - `arjun -u target.tlf=d`
 - Burpsuite plugin `parmafinder++`
+- webarchive `https://web.archive.org/cdx/search/cdx?url=*.domanin.tld&fl=original&collapse=urlkey`
 - ffuf
 
 ## Common file checks
