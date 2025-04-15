@@ -1,3 +1,8 @@
+This is a basic note for Red Teamers, Pentesters, Offsec Enthusiast, CTF Players etc
+
+For Activity Directory notes check [Active Directory](https://github.com/ZishanAdThandar/pentest/blob/main/notes/ActiveDirectory.md).
+
+You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to install tools and wordlist on your linux system.
 
 # CTF Box Solving Manual
 
@@ -30,10 +35,6 @@
 - Subdomain Enumeration
    1. Gobuster ```gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -r```
    2. ffuf ```ffuf -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'```
-- Directory Busting
-   1. Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
-   2. Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
-   3. Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
 - BruteForce: ssh, kerbrute or any other service using hydra or any specific tool
 - Check outdated or vulnerable version for any service or software using exploitdb and google
 - Default Crecdentials, Check any software or service is using default credential or easy to crack username password
