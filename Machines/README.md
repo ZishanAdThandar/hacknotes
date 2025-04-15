@@ -33,9 +33,10 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - Wordlist generator
    `cewl http://domain.tld/ | grep -v CeWL > custom-wordlist.txt`
 - Subdomain Enumeration
-   1. Gobuster ```gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -r```
-   2. ffuf ```ffuf -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'```
-- BruteForce: ssh, kerbrute or any other service using hydra or any specific tool
+   - Gobuster ```gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt -r```
+   - ffuf ```ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'```
+   - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
+- BruteForce: ssh, kerbrute or any other service using hydra, medusa or any specific tool like kerbrute etc.
 - Check outdated or vulnerable version for any service or software using exploitdb and google
 - Default Crecdentials, Check any software or service is using default credential or easy to crack username password
 
