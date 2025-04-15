@@ -65,7 +65,8 @@ We can also utilize online exploit databases to search for vulnerabilities, like
 
 ## Manual Methods
 
-- Login Bypass
+- [Login Bypass](./LogInBypass.md)
+- [SQL Injection](./SQLInjection.md)
 
 
 
