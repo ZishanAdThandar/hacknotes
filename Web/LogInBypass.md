@@ -1,4 +1,5 @@
-## Login Bypass
+# Login Bypass
+
 - Default Credential: Search on search engines for platform or CMS specific credentials
 - Credential Stuffing
  - Using same username password from another place
@@ -26,4 +27,7 @@
 
 
 
+## Tools
+- Hydra
+- Burp Suite 
 
