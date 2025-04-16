@@ -1,5 +1,12 @@
 ## Linux Priviledge Escalation
+- OS Version
 
+- Kernel Exploits
+   - **Check Kernel**: `uname -r`
+   - **Exploit**: Search for exploits by kernel version on Exploit-DB.
+     
+- Running Services
+  
 - SUID Binaries
    - **Find SUID Files**: `find / -perm -4000 2>/dev/null`
    - **Exploits**: Use GTFOBins for known SUID binary exploits.
@@ -19,10 +26,6 @@
 - SSH Keys
    - **Find Keys**: `find / -name "*.pem" 2>/dev/null`
    - **Exploit**: Use private key for SSH if no passphrase.
-
-- Kernel Exploits
-   - **Check Kernel**: `uname -r`
-   - **Exploit**: Search for exploits by kernel version on Exploit-DB.
 
 - PATH Variable Manipulation
    - **Exploit**: Modify `PATH` and place malicious script in writable directory.
@@ -53,6 +56,8 @@
      find / -name "*.old" 2>/dev/null
      grep -i "password" /path/to/directory
      ```
+- Check Hidden Files
+- Check Hidden Direstories
   - **ssh files**
     ```bash
     find / -name "id_rsa" -o -name "id_dsa" -o -name "authorized_keys" -o -name "known_hosts" 2>/dev/null
