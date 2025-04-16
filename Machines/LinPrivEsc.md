@@ -65,3 +65,14 @@
     ```
 
      
+## Common Checks
+```bash
+whoami #username
+hostname #hostname
+cat /etc/os-release #os details
+uname -a #kernel details
+lscpu #cpu details
+route #ip and interface details
+cat /etc/passwd | cut -f1 -d: # users details
+
+```
