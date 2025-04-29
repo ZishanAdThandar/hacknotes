@@ -52,6 +52,7 @@
 - Password and Credential Files
    - **Find Sensitive Files**:
      ```bash
+     find / -type f -exec grep -iH 'password' {} \; 2>/dev/null
      find / -type f -exec grep -Ei 'password|passwd|pwd|secret|token|key' {} \; 2>/dev/null
      find / -type f -exec grep -iE 'pass(word)?\s*=\s*["'\'']?.+["'\'']?' {} \; 2>/dev/null
      find / -name "*.bak" 2>/dev/null
