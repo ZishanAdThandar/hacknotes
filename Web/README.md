@@ -33,6 +33,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - acunetix
   
 ## Directory Busting
+- dirsearch `dirsearch -e php,html,txt -t 50 -u http://domain.tld/`
 - Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
 - Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
 - Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
