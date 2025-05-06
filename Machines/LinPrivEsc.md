@@ -7,6 +7,7 @@
      
 - Running Services
   - `ps -eo user,pid,comm | grep '^root'`
+
 - SUID Binaries
    - **Find SUID Files**: `find / -perm -4000 2>/dev/null`
    - **Exploits**: Use GTFOBins for known SUID binary exploits.
