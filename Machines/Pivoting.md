@@ -3,7 +3,7 @@
 ## Introduction
 Pivoting is a powerful technique in penetration testing that allows an attacker to move deeper into a target network. Mastering tools like SSH, Chisel, Ligolo, Metasploit, and ProxyChains enables penetration testers to navigate restricted environments effectively. This enables lateral movement within an organization’s internal infrastructure. By leveraging pivoting, attackers can bypass security controls like firewalls and access sensitive internal resources. 
 
-- Table of Contents
+## Table of Contents
 - [Types of Pivoting](#types-of-pivoting)
 - [Pre Pivot](#pre-pivot)
   - [Compromise an Initial Host](#compromise-an-initial-host)
@@ -13,6 +13,12 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
   - [SSH Pivoting (Dynamic and Local Port Forwarding)](#ssh-pivoting-dynamic-and-local-port-forwarding)
   - [SSHuttle Pivoting](#sshuttle-pivoting)
   - [Ligolo (Auto Route Creation)](#ligolo-auto-route-creation)
+  - [Chisel (Fast TCP/UDP Tunneling)](#chisel-fast-tcpudp-tunneling)
+  - [Metasploit Pivoting](#metasploit-pivoting)
+  - [Plink (PuTTY Link) Pivoting](#plink-putty-link-pivoting)
+  - [RDP Pivoting](#rdp-pivoting)
+  - [ICMP Tunneling](#icmp-tunneling)
+  - [DNS Tunneling](#dns-tunneling)
 - [Post Pivoting](#post-pivoting)
   - [Routing Traffic Through Compromised Host](#routing-traffic-through-compromised-host)
   - [Exploit Further and Move Laterally](#exploit-further-and-move-laterally)
