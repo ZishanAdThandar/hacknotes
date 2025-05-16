@@ -39,15 +39,16 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
 
 4. ### Establish Pivoting
     - #### SSH Tunneling (Dynamic and Local Port Forwarding)
+        - Improper pivot as some of the reuest will not work.
         - Create a SOCKS proxy to route traffic: `ssh -D 1080 -N user@compromised-host`
         - Use local port forwarding to expose internal services: `ssh -L 8080:10.10.0.10:80 user@compromised-host`
         - Then use ProxyChains
             - Modify /etc/proxychains.conf to use SOCKS5 proxy: `socks5 127.0.0.1 1080`
             - Run tools through ProxyChains: `proxychains nmap -sT 10.10.0.0/24` 
-    - #### Chisel (Fast TCP/UDP Tunneling)
-        - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
-        - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
-        - Use ProxyChains with Chisel for further tunneling.
+    - #### sshuttle
+        - Improper pivot as some of the reuest will not work.
+        - `sshuttle -r privilege@192.168.80.10 192.168.98.0/24`
+        - Explained `sshuttle -r user@target internal_ip/24`.
     - #### Ligolo (Auto Route Creation)
         - Setup network configuration
           ```bash
@@ -67,6 +68,10 @@ Pivoting is a crucial technique in penetration testing that allows an attacker t
            ip route add 192.168.148.0/24 dev ligolo
            ip route list
            ```
+    - #### Chisel (Fast TCP/UDP Tunneling)
+        - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
+        - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
+        - Use ProxyChains with Chisel for further tunneling.
           
     - #### Metasploit Pivoting
         - Use autoroute to add routes through the compromised system: `run autoroute -s 10.10.0.0/24`
