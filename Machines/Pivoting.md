@@ -4,7 +4,6 @@
 Pivoting is a powerful technique in penetration testing that allows an attacker to move deeper into a target network. Mastering tools like SSH, Chisel, Ligolo, Metasploit, and ProxyChains enables penetration testers to navigate restricted environments effectively. This enables lateral movement within an organization’s internal infrastructure. By leveraging pivoting, attackers can bypass security controls like firewalls and access sensitive internal resources. 
 
 ## Table of Contents
-- [Types of Pivoting](#types-of-pivoting)
 - [Pre Pivot](#pre-pivot)
   - [Compromise an Initial Host](#compromise-an-initial-host)
   - [Identify Network Interfaces](#identify-network-interfaces)
@@ -25,19 +24,6 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
   - [Maintain Access and Cover Tracks](#maintain-access-and-cover-tracks)
 
 --- 
-## Types of Pivoting
-- **Network Pivoting** - Routing traffic through a compromised system to access internal networks.
-- **Port Forwarding** - Exposing services from an internal machine to the attacker's machine.
-- **VPN Pivoting** - Creating a VPN connection to route all traffic through the compromised host.
-- **SOCKS Proxy Pivoting** - Using a SOCKS proxy to tunnel traffic through a compromised host.
-- **Metasploit Pivoting** - Utilizing Metasploit's autoroute and SOCKS modules.
-- **Plink (PuTTY Link) Pivoting** - Using Plink for SSH tunneling.
-- **SSHuttle Pivoting** - Transparently routing traffic through an SSH connection.
-- **RDP Pivoting** - Using Remote Desktop Protocol (RDP) to access internal machines.
-- **ICMP Tunneling** - Encapsulating data within ICMP packets.
-- **DNS Tunneling** - Exfiltrating or tunneling data over DNS queries.
-
---- 
 # Pre Pivot 
 - ## Compromise an Initial Host
   - Gain access to an external system using exploits, phishing, or credentials.
@@ -56,6 +42,7 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
   - Scan internal subnets using: `nmap -sP 10.10.0.0/24`
   - Check for active services: `nmap -sV -p 80,443,3389,445 10.10.0.10`
   - Extract credentials if possible (e.g., from memory dumps or configuration files).
+
 --- 
 # Pivoting
   - ## SSH Pivoting (Dynamic and Local Port Forwarding)
