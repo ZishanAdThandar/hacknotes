@@ -43,7 +43,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 
 
 ## CMS Test
-- wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --plugin-detection aggresive --api-token=<API_TOKEN>` Check https://wpscan.com/profile for api token.
+- wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --api-token=<API_TOKEN>` Check https://wpscan.com/profile for api token.
 - Search for other CMS Scanner and use them on particular CMS
 - Known CVE: Check outdated or vulnerable version for any service or software using exploitdb and google.
 
