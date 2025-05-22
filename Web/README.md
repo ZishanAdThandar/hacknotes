@@ -4,15 +4,26 @@ Check my [Bug Bounty Hunting Methodology](https://github.com/ZishanAdThandar/pen
 
 You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to install tools and wordlist on your linux system.
 
-- [Basic Recon](#basic-recon)
-- [Basic Automation](#basic-recon-automation)
-- [Subdomain Enumeration](#subdomain-enumeration)
-- [Directory Busting](#directory-busting)
-- [Crawling](#crawling)
-- [CMS Test](#cms-test)
-- [Parameter Fuzzing](#parameter-fuzzing)
-- [Login Bypass](#login-bypass)
+- [Installing Tools and Wordlists](#installing-tools-and-wordlists)
+- [Recon](#recon)
+    - [Basic Recon](#basic-recon)
+    - [Basic Automation](#basic-recon-automation)
+    - [Subdomain Enumeration](#subdomain-enumeration)
+    - [Directory Busting](#directory-busting)
+    - [Crawling](#crawling)
+    - [Parameter Fuzzing](#parameter-fuzzing)
+- [Scanning](#scanning)
+    - [CMS Test](#cms-test)
+    - [Dorking](#dorking)
+- [Manual Testing](#manual-testing)
+    - [Manual Methods](#manual-methods)
 
+
+## Installing Tools and Wordlists
+- [hackify.sh](https://github.com/ZishanAdThandar/hackify): Use this to install important tools and wordlists. 
+- [Top tools list](./notes/TOOLS.md): Remaining tools can be installed manually.
+--- 
+# Recon 
 ## Basic Recon
 - dig `dig axfr @<ip_address> target.tld`
 - nslookup
@@ -41,12 +52,6 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 
 ## Crawling
 
-
-## CMS Test
-- wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --api-token=<API_TOKEN>` Check https://wpscan.com/profile for api token.
-- Search for other CMS Scanner and use them on particular CMS
-- Known CVE: Check outdated or vulnerable version for any service or software using exploitdb and google.
-
 ## Parameter Fuzzing
 - `arjun -u target.tlf=d`
 - Burpsuite plugin `parmafinder++`
@@ -65,6 +70,27 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - censys
 We can also utilize online exploit databases to search for vulnerabilities, like [Exploit DB](https://www.exploit-db.com), [Rapid7 DB](https://www.rapid7.com/db/), or [Vulnerability Lab](https://www.vulnerability-lab.com).
 
+---
+# Scanning
+## CMS Test
+- wpscan `wpscan --url https://domain.tld/wordpress-blog/ -e u,ap --api-token=<API_TOKEN>` Check https://wpscan.com/profile for api token.
+- Search for other CMS Scanner and use them on particular CMS
+- Known CVE: Check outdated or vulnerable version for any service or software using exploitdb and google.
+
+### DORKING
+- [DorkScout](https://github.com/R4yGM/dorkscout): Golang tool to automate google dork scan against the entiere internet or specific targets.
+- [pagodo (Passive Google Dork)](https://github.com/opsdisk/pagodo)
+- FGDS `curl https://raw.githubusercontent.com/IvanGlinkin/Fast-Google-Dorks-Scan/master/FGDS.sh -s |bash -s domain.com`
+- [sitedorks by Zarcolio](https://github.com/Zarcolio/sitedorks)
+- [git-hound](https://github.com/tillson/git-hound)
+    - Install git-hound with Hackify or from repo release then `which git-hound`
+    - Login Details: `nano /root/go/bin/config.yml` Example: https://github.com/tillson/git-hound/blob/main/config.example.yml
+    - Entering OTP `git-hound --otp-code 1234568`
+    - `git-hound --config-file /root/go/bin/config.yml --subdomain-file subdomains.txt`
+ 
+      
+---
+# Manual Testing
 ## Manual Methods
 
 - [Login Bypass](./LogInBypass.md)
