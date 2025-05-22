@@ -48,7 +48,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - dig `dig axfr @<ip_address> target.tld`
 - nslookup, host, dnsenum, fierce, dnsrecon
 - `whois target.tld`
-- theharvester
+- [theHarvester](https://github.com/laramies/theHarvester), [FinalRecon](https://github.com/thewhiteh4t/FinalRecon), [Recon-ng](https://github.com/lanmaster53/recon-ng), [SpiderFoot](https://github.com/smicallef/spiderfoot) or [OSINT Framework](https://osintframework.com/)
   
 ## Subdomain Enumeration
 - Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt -r`
