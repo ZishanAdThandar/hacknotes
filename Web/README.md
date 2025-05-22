@@ -21,7 +21,13 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 
 
 ## Installing Tools and Wordlists
-- [hackify.sh](https://github.com/ZishanAdThandar/hackify): Use this to install important tools and wordlists. 
+- [hackify.sh](https://github.com/ZishanAdThandar/hackify): Use this to install important tools and wordlists.
+    ```bash
+    git clone https://github.com/ZishanAdThandar/hackify.git
+    cd hackify
+    chmod +x hackify.sh; bash hackify.sh # tools
+    chmod +x wordlist.sh; bash wordlist.sh # wordlist
+    ```
 - [Top tools list](./notes/TOOLS.md): Remaining tools can be installed manually.
 --- 
 # Recon 
