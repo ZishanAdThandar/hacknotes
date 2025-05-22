@@ -9,6 +9,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Recon](#recon)
     - [Basic Recon](#basic-recon)
     - [Subdomain Enumeration](#subdomain-enumeration)
+    - [Cloudflare Bypass](#cloudflare-bypass)
     - [Directory Busting](#directory-busting)
     - [Crawling](#crawling)
     - [Parameter Fuzzing](#parameter-fuzzing)
@@ -23,7 +24,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
     - [Manual Methods](#manual-methods)
 
 
-## Installing Tools and Wordlists
+# Installing Tools and Wordlists
 - [HackiFy](https://github.com/ZishanAdThandar/hackify) should be used to install important tools and wordlists.
     ```bash
     git clone https://github.com/ZishanAdThandar/hackify.git
@@ -33,7 +34,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
     ```
 - [Top tools list](./notes/TOOLS.md): Remaining tools can be installed manually.
 ---
-### Finding Targets
+# Finding Targets
 - [h1asset by adysec](https://github.com/adysec/h1_asset), [h1domains by zricethezav](https://github.com/zricethezav/h1domains), [Inventory by Trickest](https://github.com/trickest/inventory), [bounty-targets-data by arkadiyt](https://github.com/arkadiyt/bounty-targets-data), [bug-bounty-recon-dataset by inth3wild](https://github.com/inth3wild/bug-bounty-recon-dataset)
 - Google dork https://github.com/sushiwushi/bug-bounty-dorks/blob/master/dorks.txt
 - [Bug Bounty Hunting Platforms](https://github.com/ZishanAdThandar/pentest?tab=readme-ov-file#bug-bounty-hunting-platforms)
@@ -53,13 +54,13 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - ffuf `ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
 - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
 
-### Cloudflare Bypass
-1. [SecurityTrails](https://securitytrails.com/list/ip/IP_ADDRESS), [ViewDNS.info](https://viewdns.info): For DNS history and records.
-2. [dnsdumpster.com](https://dnsdumpster.com/)
-3. [Shodan](https://www.shodan.io/), [Censys](https://search.censys.io/): For Internet device searches.
-4. [Google](https://www.google.com/), [Bing](https://www.bing.com/): For cached search engine results.
-5. [crt.sh](https://crt.sh/), [Censys](https://search.censys.io/), [CertDB](https://app.w2s2.com/default/certdb): For certificate transparency logs.
-6. `dig`: To find DNS misconfigeration ip leak.
+## Cloudflare Bypass
+- [SecurityTrails](https://securitytrails.com/list/ip/IP_ADDRESS), [ViewDNS.info](https://viewdns.info): For DNS history and records.
+- [dnsdumpster.com](https://dnsdumpster.com/)
+- [Shodan](https://www.shodan.io/), [Censys](https://search.censys.io/): For Internet device searches.
+- [Google](https://www.google.com/), [Bing](https://www.bing.com/): For cached search engine results.
+- [crt.sh](https://crt.sh/), [Censys](https://search.censys.io/), [CertDB](https://app.w2s2.com/default/certdb): For certificate transparency logs.
+- `dig`: To find DNS misconfigeration ip leak.
    
 ## Directory Busting
 - Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
