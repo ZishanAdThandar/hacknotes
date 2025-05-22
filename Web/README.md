@@ -73,6 +73,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 
 ## Crawling
 - [LinkFinder by GerbenJavado](https://github.com/GerbenJavado/LinkFinder)
+- [ReconSpider](https://github.com/bhavsec/reconspider) `Python3 reconspider.py domain.tld`
 
 ## Parameter Fuzzing
 - `arjun -u target.tlf=d`
