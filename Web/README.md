@@ -77,7 +77,7 @@ We can also utilize online exploit databases to search for vulnerabilities, like
 - Search for other CMS Scanner and use them on particular CMS
 - Known CVE: Check outdated or vulnerable version for any service or software using exploitdb and google.
 
-### DORKING
+## Dorking
 - [DorkScout](https://github.com/R4yGM/dorkscout): Golang tool to automate google dork scan against the entiere internet or specific targets.
 - [pagodo (Passive Google Dork)](https://github.com/opsdisk/pagodo)
 - FGDS `curl https://raw.githubusercontent.com/IvanGlinkin/Fast-Google-Dorks-Scan/master/FGDS.sh -s |bash -s domain.com`
@@ -87,7 +87,20 @@ We can also utilize online exploit databases to search for vulnerabilities, like
     - Login Details: `nano /root/go/bin/config.yml` Example: https://github.com/tillson/git-hound/blob/main/config.example.yml
     - Entering OTP `git-hound --otp-code 1234568`
     - `git-hound --config-file /root/go/bin/config.yml --subdomain-file subdomains.txt`
+
  
+## Automated Scan
+- Burp Suite Pro: with different extensions it could perform better
+- [nuclei](https://github.com/projectdiscovery/nuclei) with [nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) or external templates
+    - nuclei template install (as root): `nuclei -ut`
+    - nuclei command: `nuclei -l httpsubdomain.txt -resume nuclei.txt -nmhe` [`rate-limit 10`/second to avoid error of rapid request, `-nmhe` to skip error]
+- Acunetix Pro 
+    - Creating Acunetix CSV list from https links `for i in $(cat domain.comhttpssubdomain.txt); do echo \"$i\", \" \"; done > domain.comacunetix.csv`
+- [Afrog](https://github.com/zan8in/afrog) `afrog -T domain.comhttpsubs.txt`
+- [Owasp NetTracker](https://github.com/OWASP/Nettacker) 
+- Wapiti [Linux]
+- [XAttacker](https://github.com/Moham3dRiahi/XAttacker) `perl XAttacker.pl -l list.txt`
+
       
 ---
 # Manual Testing
