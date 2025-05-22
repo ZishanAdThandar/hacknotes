@@ -51,11 +51,13 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - `feroxbuster -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u http://target.tld/`
 
 ## Crawling
+- [LinkFinder by GerbenJavado](https://github.com/GerbenJavado/LinkFinder)
 
 ## Parameter Fuzzing
 - `arjun -u target.tlf=d`
 - Burpsuite plugin `parmafinder++`
 - webarchive `https://web.archive.org/cdx/search/cdx?url=*.domanin.tld&fl=original&collapse=urlkey`
+- [x8 Paramter Discovery](https://github.com/Sh1Yo/x8)
 - ffuf
 
 ## Common file checks
@@ -100,8 +102,18 @@ We can also utilize online exploit databases to search for vulnerabilities, like
 - [Owasp NetTracker](https://github.com/OWASP/Nettacker) 
 - Wapiti [Linux]
 - [XAttacker](https://github.com/Moham3dRiahi/XAttacker) `perl XAttacker.pl -l list.txt`
+    
+## Exploitation Tools
+- RCE:  [Commix](https://github.com/commixproject/commix)
+- Cross Site Scripting: [XSStrike](https://github.com/s0md3v/XSStrike), [XSSxrapy](https://github.com/DanMcInerney/xsscrapy)
+- File inclusion: [LFIMap](https://github.com/hansmach1ne/LFImap), [liffy](https://github.com/mzfr/liffy)
+- Fileupload: [fuxploider](https://github.com/almandin/fuxploider) 
+- CORS: [Corsy](https://github.com/s0md3v/Corsy) 
+- CRLF Injection: [crlfuzz](https://github.com/dwisiswant0/crlfuzz) 
+- GraphQL: [batchql by assetnote](https://github.com/assetnote/batchql), [INQL Scanner Burpsuite Extension](https://portswigger.net/bappstore/296e9a0730384be4b2fffef7b4e19b1f) or [INQL Script](https://pypi.org/project/inql/)
+- 403 bypass: [bypass-403 by iamj0ker](https://github.com/iamj0ker/bypass-403), [403bypasser by yunemse48](https://github.com/yunemse48/403bypasser), [4-ZERO-3 by Dheerajmadhukar](https://github.com/Dheerajmadhukar/4-ZERO-3) or [403 Bypasser Burpsuite Extension](https://portswigger.net/bappstore/444407b96d9c4de0adb7aed89e826122)
+- GF Pattern Commands: [Gf-Patterns](https://github.com/1ndianl33t/Gf-Patterns)
 
-      
 ---
 # Manual Testing
 ## Manual Methods
