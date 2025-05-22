@@ -3,7 +3,7 @@ This note is written to Solve Web Application CTFs, Bug Bounty or Web App Penetr
 Check my [Bug Bounty Hunting Methodology](https://github.com/ZishanAdThandar/pentest/blob/main/notes/BugBountyHuntingMethodology.md) to learn some bonus.
 
 You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to install tools and wordlist on your linux system.
-
+# Content
 - [Installing Tools and Wordlists](#installing-tools-and-wordlists)
 - [Finding Targets](#finding-targets)
 - [Recon](#recon)
@@ -84,6 +84,13 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - `robots.txt`, `secrets.txt` etc file could reveal sensetive information
 - use `dirb` to find common files. `dirb http://target.tld`
 - Check source code for any sensetive information leak
+
+## Banner Grabbing
+- Wappalyzer, Builtwith
+- WhatWeb, nmap, Netcraft
+- `wafw00f domain.tld`
+- `nikto -h domain.tld -Tuning b`
+- `curl -I domain.tld`
 
 ## Known Vulnerablity in Software or Services
 - Searching on Google
