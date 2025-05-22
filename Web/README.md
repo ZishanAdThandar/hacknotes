@@ -45,8 +45,9 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 # Recon 
 ## Basic Recon
 - dig `dig axfr @<ip_address> target.tld`
-- nslookup
-- whois
+- nslookup, host, dnsenum, fierce, dnsrecon
+- `whois target.tld`
+- theharvester
   
 ## Subdomain Enumeration
 - Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt -r`
@@ -120,7 +121,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Owasp NetTracker](https://github.com/OWASP/Nettacker) 
 - Wapiti [Linux]
 - [XAttacker](https://github.com/Moham3dRiahi/XAttacker) `perl XAttacker.pl -l list.txt`
-- theharvester
+
     
 ## Exploitation Tools
 - RCE:  [Commix](https://github.com/commixproject/commix)
