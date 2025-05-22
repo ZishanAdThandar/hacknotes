@@ -1,6 +1,6 @@
 # HackNotes
 
-Private Notes for CTF Players of Zishan Ahamed Thandar
+Private Notes for Bug Hunters, CTF Players, Pentesters of Zishan Ahamed Thandar
 
 ## Contents
 - [Machines](./Machines)
