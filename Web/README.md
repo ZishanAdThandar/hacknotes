@@ -11,6 +11,8 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
     - [Directory Busting](#directory-busting)
     - [Crawling](#crawling)
     - [Parameter Fuzzing](#parameter-fuzzing)
+    - [Common File Checks](#common-file-checks)
+    - [Known Vulnerablity in Software or Services](#known-vulnerablity-in-software-or-services)
 - [Scanning](#scanning)
     - [CMS Test](#cms-test)
     - [Dorking](#dorking)
@@ -65,12 +67,12 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - use `dirb` to find common files. `dirb http://target.tld`
 - Check source code for any sensetive information leak
 
-## search for vulnerablity in Software or Services
+## Known Vulnerablity in Software or Services
 - Searching on Google
 - Using searchsploit
 - shodan
 - censys
-We can also utilize online exploit databases to search for vulnerabilities, like [Exploit DB](https://www.exploit-db.com), [Rapid7 DB](https://www.rapid7.com/db/), or [Vulnerability Lab](https://www.vulnerability-lab.com).
+- We can also utilize online exploit databases to search for vulnerabilities, like [Exploit DB](https://www.exploit-db.com), [Rapid7 DB](https://www.rapid7.com/db/), or [Vulnerability Lab](https://www.vulnerability-lab.com).
 
 ---
 # Scanning
