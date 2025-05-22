@@ -15,6 +15,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Scanning](#scanning)
     - [CMS Test](#cms-test)
     - [Dorking](#dorking)
+    - [One Liners](#one-liners)
 - [Manual Testing](#manual-testing)
     - [Manual Methods](#manual-methods)
 
@@ -35,13 +36,6 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - ffuf `ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
 - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
 
-## Basic Automation
-- nikto
-- theharvester
-- wapiti
-- afrog
-- nuclei
-- acunetix
   
 ## Directory Busting
 - Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
@@ -89,7 +83,6 @@ We can also utilize online exploit databases to search for vulnerabilities, like
     - Login Details: `nano /root/go/bin/config.yml` Example: https://github.com/tillson/git-hound/blob/main/config.example.yml
     - Entering OTP `git-hound --otp-code 1234568`
     - `git-hound --config-file /root/go/bin/config.yml --subdomain-file subdomains.txt`
-
  
 ## Automated Scan
 - Burp Suite Pro: with different extensions it could perform better
@@ -102,6 +95,7 @@ We can also utilize online exploit databases to search for vulnerabilities, like
 - [Owasp NetTracker](https://github.com/OWASP/Nettacker) 
 - Wapiti [Linux]
 - [XAttacker](https://github.com/Moham3dRiahi/XAttacker) `perl XAttacker.pl -l list.txt`
+- theharvester
     
 ## Exploitation Tools
 - RCE:  [Commix](https://github.com/commixproject/commix)
@@ -114,10 +108,16 @@ We can also utilize online exploit databases to search for vulnerabilities, like
 - 403 bypass: [bypass-403 by iamj0ker](https://github.com/iamj0ker/bypass-403), [403bypasser by yunemse48](https://github.com/yunemse48/403bypasser), [4-ZERO-3 by Dheerajmadhukar](https://github.com/Dheerajmadhukar/4-ZERO-3) or [403 Bypasser Burpsuite Extension](https://portswigger.net/bappstore/444407b96d9c4de0adb7aed89e826122)
 - GF Pattern Commands: [Gf-Patterns](https://github.com/1ndianl33t/Gf-Patterns)
 
+
+## One Liners
+- [Bug Bounty oneliners by thevillagehacker](https://github.com/thevillagehacker/Bug-Hunting-Arsenal/blob/main/Bug%20Bounty%20Tips/files/oneliners.md)
+- [Bug Bounty Hunters oneliners by codelively](https://www.codelivly.com/powerful-one-liner-scripts-for-bug-bounty-hunters)
+
 ---
 # Manual Testing
+- Burp Extenders from BApp store or : Turbo Intruder or many others https://github.com/snoopysecurity/awesome-burp-extensions
+- Burp BChecks: [BChecks Collection](https://github.com/emadshanab/BChecks-Collection), [PortSwigger BChecks](https://github.com/PortSwigger/BChecks/), Custom BChecks etc
 ## Manual Methods
-
 - [Login Bypass](./LogInBypass.md)
 - [SQL Injection](./SQLInjection.md)
 
