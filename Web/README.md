@@ -85,7 +85,7 @@ We can also utilize online exploit databases to search for vulnerabilities, like
     - `git-hound --config-file /root/go/bin/config.yml --subdomain-file subdomains.txt`
  
 ## Automated Scan
-- Burp Suite Pro: with different extensions it could perform better
+- Burp Suite Pro: with different extensions like [HUNT by BugCrowd](https://github.com/bugcrowd/HUNT). Bug Bounty Pro could be used.
 - [nuclei](https://github.com/projectdiscovery/nuclei) with [nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) or external templates
     - nuclei template install (as root): `nuclei -ut`
     - nuclei command: `nuclei -l httpsubdomain.txt -resume nuclei.txt -nmhe` [`rate-limit 10`/second to avoid error of rapid request, `-nmhe` to skip error]
