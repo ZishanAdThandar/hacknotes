@@ -14,6 +14,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
     - [Crawling](#crawling)
     - [Parameter Fuzzing](#parameter-fuzzing)
     - [Common File Checks](#common-file-checks)
+    - [Banner Grabbing](#banner-grabbing)
     - [Known Vulnerablity in Software or Services](#known-vulnerablity-in-software-or-services)
 - [Scanning](#scanning)
     - [CMS Test](#cms-test)
