@@ -105,12 +105,13 @@ or encodings of them will give SQL error.
 1. SQLMAP
 2. JQL Injection
 3. Havij (Outdated)
-   
+
 ## Practice Labs
 - [PortSwiggerLab Labs](https://portswigger.net/web-security/all-labs#sql-injection)
 - [VulnWeb by acunetix](http://vulnweb.com/)
 
 ## Resources and Notes
+- [SQLi Pentest Toolkit](https://cybersecleet.github.io/SQLi-Pentest-Toolkit/)
 - [Advanced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet) Proper Notes with payloads by each SQL Database and SQLi type
 - [PentestMonkey SQL Injection Cheatsheet](https://pentestmonkey.net/category/cheat-sheet/sql-injection)
 - [swisskyrepo PayloadsAllTheThings](https://swisskyrepo.github.io/PayloadsAllTheThings/SQL%20Injection/#entry-point-detection)
