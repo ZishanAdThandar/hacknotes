@@ -13,8 +13,13 @@
 - LinkedIn
   - Search using LinkedIn Job Search with filters
   - Search using Post Search with filters
-- Company Career Pages: Google dork for random companies or find in top companies. e.g ninjajobs.org etc
-- Country Based Job Sites: Find jobs on job search sites of particular region
+- [NinjaJobs.org](https://ninjajobs.org)
+- Company Career Pages
+  - Google dork for random companies
+  - find in top companies.
+    - [TryHackMe](https://careers.tryhackme.com/)
+    - [HackTheBox](https://jobs.hackthebox.com/)
+- Country based Job Platforms: Find jobs on job search sites of particular region
 - Referal or Networks
   - Ask for referal via people in social media platforms like LinkedIn, facebook etc.
   - Chat servers like discord, facebook groups, telegram groups etc.
