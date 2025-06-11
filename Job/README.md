@@ -10,15 +10,15 @@
 - [Interview Question Answers](#interview-question-answers)
 
 ## Job Hunting
-- LinkedIn
-  - Search using LinkedIn Job Search with filters
-  - Search using Post Search with filters
-- [NinjaJobs.org](https://ninjajobs.org)
+- Top Job Hunting Platforms
+  - LinkedIn (Search with Job Search filters or with Post Search filters)
+  - [NinjaJobs.org](https://ninjajobs.org)
+  - [HackTheBox](https://jobs.hackthebox.com/)
 - Company Career Pages
   - Google dork for random companies
   - find in top companies.
     - [TryHackMe](https://careers.tryhackme.com/)
-    - [HackTheBox](https://jobs.hackthebox.com/)
+    - [HackTheBox](https://www.hackthebox.com/join-us)
     - [Compare Different Companies](https://www.levels.fyi)
 - Country based Job Platforms: Find jobs on job search sites of particular region
 - Referal or Networks
