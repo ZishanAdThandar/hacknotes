@@ -129,7 +129,6 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [Afrog](https://github.com/zan8in/afrog) `afrog -T domain.comhttpsubs.txt`
 - [Owasp NetTracker](https://github.com/OWASP/Nettacker) 
 - Wapiti [Linux]
-- [XAttacker](https://github.com/Moham3dRiahi/XAttacker) `perl XAttacker.pl -l list.txt`
 
     
 ## Exploitation Tools
