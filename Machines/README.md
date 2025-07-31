@@ -18,6 +18,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - Port Scan
    - naabu
       - tcp all `naabu -p - -host <target>`
+      - `naabu --nmap-cli "nmap -sC -sV -A -Pn" -p - -rate 10000 -host <target>`
    - rustscan
       - tcp `rustscan -a <target>`
       - udp `rustscan --udp -a <target>`
