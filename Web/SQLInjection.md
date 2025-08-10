@@ -94,7 +94,7 @@ or encodings of them will give SQL error.
 - Encoding (Hex, Base64, URL encoding, Unicode)
 - Case Changing (UnIoN SeLeCt instead of UNION SELECT)
 - Comments (--, #, /**/ to obfuscate queries)
-- Concatenation (CONCAT(), ||, +, UNION ALL SELECT ''||'payload')
+- Concatenation (CONCAT(), |\|, +, UNION ALL SELECT ''|\|'payload')
 - HTTP Header Injection (X-Forwarded-For, User-Agent, Referer)
 - Escaping & Special Characters (\, \x00, %00, NULL bytes)
 - Whitespace Manipulation (/**/, TAB, NEWLINE tricks)
