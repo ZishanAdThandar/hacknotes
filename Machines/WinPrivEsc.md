@@ -8,3 +8,6 @@
   - WinPEAS
   - PowerUp
   - Windows Exploit Suggester
+
+References:
+- https://github.com/nickvourd/Windows-Local-Privilege-Escalation-Cookbook
