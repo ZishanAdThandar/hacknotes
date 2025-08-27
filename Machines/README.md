@@ -13,15 +13,16 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 ## Recon Tools and Commands
 
 - Autorecon
-   - https://github.com/21y4d/nmapAutomator
+   - https://github.com/21y4d/nmapAutomator `nmapAutomator -H <target> -t Full`
    - https://github.com/Tib3rius/AutoRecon/
 - Port Scan
+   - rustscan
+      - Combo `rustscan -a <target> -b 10000 -- -sC -sV -A -Pn`
+      - tcp `rustscan -a <target>`
+      - udp `rustscan --udp -a <target>`
    - naabu
       - tcp all `naabu -p - -host <target>`
       - `naabu --nmap-cli "nmap -sC -sV -A -Pn" -p - -rate 10000 -host <target>`
-   - rustscan
-      - tcp `rustscan -a <target>`
-      - udp `rustscan --udp -a <target>`
    - nmap
       - Basic All port `nmap -Pn --min-rate 5000 -T5 -A -sS -sU -p- -oN nmapfull.txt -oX nmapfull.xml <target>`
       - All port with vuln scripts `nmap --script vuln --min-rate 5000 -Pn -p- -T5 -A -oN nmapvuln.txt <target>`
