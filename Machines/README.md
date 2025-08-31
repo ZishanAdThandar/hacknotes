@@ -17,9 +17,8 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
    - https://github.com/Tib3rius/AutoRecon/
 - Port Scan
    - rustscan
-      - Combo `rustscan -a <target> -b 10000 -- -sC -sV -A -Pn`
-      - tcp `rustscan -a <target>`
-      - udp `rustscan --udp -a <target>`
+      - TCP `rustscan -r 1-65535 -a <target> -b 10000 -- -sC -sV -A -Pn`
+      - udp `rustscan --udp -r 1-65535 -a <target> -b 10000 -- -sC -sV -A -Pn`
    - naabu
       - tcp all `naabu -p - -host <target>`
       - `naabu --nmap-cli "nmap -sC -sV -A -Pn" -p - -rate 10000 -host <target>`
