@@ -51,9 +51,9 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [theHarvester](https://github.com/laramies/theHarvester), [FinalRecon](https://github.com/thewhiteh4t/FinalRecon), [Recon-ng](https://github.com/lanmaster53/recon-ng), [SpiderFoot](https://github.com/smicallef/spiderfoot) or [OSINT Framework](https://osintframework.com/)
   
 ## Subdomain Enumeration
-- Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt -r`
-- ffuf `ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` [For vpn file and ctf]
-- ffuf `ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
+- Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /usr/share/seclists/Discovery/DNS/namelist.txt -r`
+- ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` [For vpn file and ctf]
+- ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
 - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install subauto] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
 
 ## Cloudflare Bypass
@@ -65,11 +65,11 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - `dig`: To find DNS misconfigeration ip leak.
    
 ## Directory Busting
-- Recursive directory busting `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
-- Directory`ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
+- Recursive directory busting `ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
+- Directory`ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
 - dirsearch `dirsearch -e php,html,txt -t 50 -u http://domain.tld/`
-- Files `ffuf -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
-- `feroxbuster -w /opt/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u http://target.tld/`
+- Files `ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
+- `feroxbuster -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u http://target.tld/`
 
 ## Crawling
 - [LinkFinder by GerbenJavado](https://github.com/GerbenJavado/LinkFinder)
