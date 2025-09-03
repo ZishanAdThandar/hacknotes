@@ -35,9 +35,9 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
    `cewl http://domain.tld/ | grep -v CeWL > custom-wordlist.txt`
 
 - Subdomain Enumeration
-   - Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /opt/wordlists/SecLists/Discovery/DNS/namelist.txt -r`
-   - ffuf `ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` [For vpn file and ctf]
-   - ffuf `ffuf -w /opt/wordlists/SecLists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
+   - Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /usr/share/seclists/Discovery/DNS/namelist.txt -r`
+   - ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` [For vpn file and ctf]
+   - ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
    - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
 
 - BruteForce: ssh, kerbrute or any other service using hydra, medusa or any specific tool like kerbrute etc.
