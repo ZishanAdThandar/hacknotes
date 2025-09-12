@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Basic Tools](#basic-tools)
 - [Advanced Tools](#advanced-tools)
-- [Docker](#docker)
+- [Test Environments](#test-environments)
 - [Terminologies](#terminologies)
 - [Notes](#notes)
   - [File Formats and Protections](#file-formats-and-protections)
@@ -37,8 +37,10 @@
 - [Pwntools](https://github.com/Gallopsled/pwntools): Exploit development framework.
 - [Binary Ninja](https://binary.ninja/)
 
-## Docker
+## Test Environments
 - `theflash2k/pwn-dev`
+- [Remnux Linux VM](https://remnux.org/)
+- [FlareVM windows VM](https://github.com/mandiant/flare-vm)
 
 ## Terminologies
 - Machine Code: Low-level binary instructions executed by the CPU.
