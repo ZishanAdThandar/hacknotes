@@ -65,7 +65,7 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - `dig`: To find DNS misconfigeration ip leak.
    
 ## Directory Busting
-- Recursive directory busting `ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
+- Recursive directory busting `ffuf -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-lowercase-2.3-big.txt -ic -recursion -recursion-depth 3 -u https://target.com/FUZZ`
 - Directory`ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u https://target.com/FUZZ/`
 - dirsearch `dirsearch -e php,html,txt -t 50 -u http://domain.tld/`
 - Files `ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-large-files.txt -u https://target.com/FUZZ/`
