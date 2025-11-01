@@ -16,17 +16,18 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
    - https://github.com/21y4d/nmapAutomator `nmapAutomator -H <target> -t Full`
    - https://github.com/Tib3rius/AutoRecon/
 - Port Scan
+   - nmap
+      - Basic port scan `nmap -Pn --min-rate 5000 -T5 -A -oN nmapBasic.txt <target>`
+      - All TCP port `nmap -Pn --min-rate 5000 -T5 -A -sS -p- -oN nmapfulltcp.txt  <target>`
+      - All UDP port `nmap -Pn --min-rate 5000 -T5 -A -sU -p- -oN nmapfulludp.txt <target>`
+      - All port with vuln scripts `nmap --script vuln --min-rate 5000 -Pn -p- -T5 -A -oN nmapvuln.txt <target>`
+      - Windows AD Specific `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389,49152-65535 --script smb-enum-shares,smb-enum-users,ldap-rootdse,ldap-search,krb5-enum-users,smb-os-discovery,smb-vuln-ms17-010,smb-enum-domains,smb-enum-sessions,smb-enum-processes,smb2-security-mode,smb2-capabilities,smb-system-info,msrpc-enum,smb-brute,rdp-enum-encryption,rdp-vuln-ms12-020,rdp-ntlm-info,ssl-cert,ssl-enum-ciphers,smb-protocols,ms-sql-info,smb-vuln-regsvc-dos -oN nmapAD.txt <target> `
    - rustscan
       - TCP `rustscan -r 1-65535 -a <target> -b 10000 -- -sC -sV -A -Pn`
       - udp `rustscan --udp -r 1-65535 -a <target> -b 10000 -- -sC -sV -A -Pn`
    - naabu
       - tcp all `naabu -p - -host <target>`
       - `naabu --nmap-cli "nmap -sC -sV -A -Pn" -p - -rate 10000 -host <target>`
-   - nmap
-      - Basic All port `nmap -Pn --min-rate 5000 -T5 -A -sS -sU -p- -oN nmapfull.txt -oX nmapfull.xml <target>`
-      - All port with vuln scripts `nmap --script vuln --min-rate 5000 -Pn -p- -T5 -A -oN nmapvuln.txt <target>`
-      - Windows AD Specific `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389,49152-65535 --script smb-enum-shares,smb-enum-users,ldap-rootdse,ldap-search,krb5-enum-users,smb-os-discovery,smb-vuln-ms17-010,smb-enum-domains,smb-enum-sessions,smb-enum-processes,smb2-security-mode,smb2-capabilities,smb-system-info,msrpc-enum,smb-brute,rdp-enum-encryption,rdp-vuln-ms12-020,rdp-ntlm-info,ssl-cert,ssl-enum-ciphers,smb-protocols,ms-sql-info,smb-vuln-regsvc-dos -oN nmapAD.txt <target> `
-
 
 - Domain or IP Recon
    - dig `dig axfr @<ip_address> target.tld`
