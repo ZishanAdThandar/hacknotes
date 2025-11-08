@@ -103,8 +103,10 @@ or encodings of them will give SQL error.
 
 ## SQL Injection Automation Tools
 1. SQLMAP
-2. JQL Injection
-3. Havij (Outdated)
+2. [sqlfinder](https://github.com/americo/sqlifinder)
+3. [ghauri](https://github.com/r0oth3x49/ghauri)
+4. JQL Injection
+5. Havij (Outdated)
 
 ## Practice Labs
 - [PortSwiggerLab Labs](https://portswigger.net/web-security/all-labs#sql-injection)
