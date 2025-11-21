@@ -13,21 +13,21 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 ## Recon Tools and Commands
 
 - Autorecon
-   - https://github.com/21y4d/nmapAutomator `nmapAutomator -H <target> -t Full`
+   - https://github.com/21y4d/nmapAutomator `nmapAutomator -H $TARGET -t Full`
    - https://github.com/Tib3rius/AutoRecon/
 - Port Scan
    - nmap
-      - Basic port scan `nmap -Pn --min-rate 5000 -T5 -A -oN nmapBasic.txt <target>`
-      - All TCP port `nmap -Pn --min-rate 5000 -T5 -A -p- -oN nmapfulltcp.txt  <target>`
-      - All UDP port `nmap -Pn --min-rate 5000 -T5 -A -sU -p- -oN nmapfulludp.txt <target>`
-      - TCP + UDP Scan with default scripts `nmap -sC -sS -sU --min-rate 5000 -Pn -p- -T5 -A -oN nmapvuln.txt <target>`
-      - Windows AD Specific `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389,49152-65535 --script smb-enum-shares,smb-enum-users,ldap-rootdse,ldap-search,krb5-enum-users,smb-os-discovery,smb-vuln-ms17-010,smb-enum-domains,smb-enum-sessions,smb-enum-processes,smb2-security-mode,smb2-capabilities,smb-system-info,msrpc-enum,smb-brute,rdp-enum-encryption,rdp-vuln-ms12-020,rdp-ntlm-info,ssl-cert,ssl-enum-ciphers,smb-protocols,ms-sql-info,smb-vuln-regsvc-dos -oN nmapAD.txt <target>`
+      - Basic port scan `nmap -Pn --min-rate 5000 -T5 -A -oN nmapBasic.txt $TARGET`
+      - All TCP port `nmap -Pn --min-rate 5000 -T5 -A -p- -oN nmapfulltcp.txt  $TARGET`
+      - All UDP port `nmap -Pn --min-rate 5000 -T5 -A -sU -p- -oN nmapfulludp.txt $TARGET`
+      - TCP + UDP Scan with default scripts `nmap -sC -sS -sU --min-rate 5000 -Pn -p- -T5 -A -oN nmapvuln.txt $TARGET`
+      - Windows AD Specific `nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389,49152-65535 --script smb-enum-shares,smb-enum-users,ldap-rootdse,ldap-search,krb5-enum-users,smb-os-discovery,smb-vuln-ms17-010,smb-enum-domains,smb-enum-sessions,smb-enum-processes,smb2-security-mode,smb2-capabilities,smb-system-info,msrpc-enum,smb-brute,rdp-enum-encryption,rdp-vuln-ms12-020,rdp-ntlm-info,ssl-cert,ssl-enum-ciphers,smb-protocols,ms-sql-info,smb-vuln-regsvc-dos -oN nmapAD.txt $TARGET`
    - rustscan
-      - TCP `rustscan -r 1-65535 -a <target> -b 10000 -- -sC -sV -A -Pn`
-      - udp `rustscan --udp -r 1-65535 -a <target> -b 10000 -- -sC -sV -A -Pn`
+      - TCP `rustscan -r 1-65535 -a $TARGET -b 10000 -- -sC -sV -A -Pn`
+      - udp `rustscan --udp -r 1-65535 -a $TARGET -b 10000 -- -sC -sV -A -Pn`
    - naabu
-      - tcp all `naabu -p - -host <target>`
-      - `naabu --nmap-cli "nmap -sC -sV -A -Pn" -p - -rate 10000 -host <target>`
+      - tcp all `naabu -p - -host $TARGET`
+      - `naabu --nmap-cli "nmap -sC -sV -A -Pn" -p - -rate 10000 -host $TARGET`
 
 - Domain or IP Recon
    - dig `dig axfr @<ip_address> target.tld`
