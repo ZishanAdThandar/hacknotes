@@ -40,8 +40,8 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
    - ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` [For vpn file and ctf]
    - ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
    - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
-   - ferox1 `feroxbuster -u http://FUZZ.example.com -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt`
-   - ferox2 `feroxbuster -u http://<target_ip> -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt -H "Host: FUZZ.example.com"`
+   - ferox1 `feroxbuster -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt -u http://FUZZ.example.com `
+   - ferox2 `feroxbuster -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt -u http://<target_ip> -H "Host: FUZZ.example.com"`
 
 - BruteForce: ssh, kerbrute or any other service using hydra, medusa or any specific tool like kerbrute etc.
 
