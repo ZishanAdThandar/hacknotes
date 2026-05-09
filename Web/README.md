@@ -51,9 +51,8 @@ You can use my script [Hackify](https://github.com/ZishanAdThandar/hackify) to i
 - [theHarvester](https://github.com/laramies/theHarvester), [FinalRecon](https://github.com/thewhiteh4t/FinalRecon), [Recon-ng](https://github.com/lanmaster53/recon-ng), [SpiderFoot](https://github.com/smicallef/spiderfoot) or [OSINT Framework](https://osintframework.com/)
   
 ## Subdomain Enumeration
-- Gobuster `gobuster vhost -u http://monitorsthree.htb --append-domain -w /usr/share/seclists/Discovery/DNS/namelist.txt -r`
-- ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` [For vpn file and ctf]
-- ffuf `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -fw 18 -mc all -ac -u http://FUZZ.domain.tld` [For Real World]
+- ffuf [For vpn file and ctf] `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -t 2000 -fw 18 -mc all -ac -u http://domain.tld -H 'Host: FUZZ.domain.tld'` , add `-fc 400,404` to exclude, add `-mc 200` to check match only 200
+- ffuf [For Real World] `ffuf -w /usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt:FUZZ -t 2000 -fw 18 -mc all -ac -u http://FUZZ.domain.tld` 
 - subauto [Use [Hackify](https://github.com/ZishanAdThandar/hackify) to install subauto] `subauto domain.tld` [Very useful for real world subdomain enumeration.]
 
 ## Cloudflare Bypass
